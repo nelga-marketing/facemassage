@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
   <title>Face Massage Landing Page</title>
   <link rel="stylesheet" href="css/constants.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
 </head>
 <body>
   <div class="page">
-    <section class="hero">
+    <section class="hero" id="hook">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Morning Lymphatic Ritual</p>
-          <h1>Wake up with a face that looks rested, lighter, and more defined.</h1>
-          <p class="lead">A calm 10-minute practice to help reduce morning puffiness, release facial tension, and bring your features back into focus.</p>
-          <p class="sublead">Gentle enough for daily use. Clear enough to follow at home. Created for women who want natural results without aggressive treatments.</p>
-          <div class="cta-row">
-            <a class="button button-primary" href="#offer">Start the ritual</a>
-            <a class="button button-secondary" href="#mechanism">See how it works</a>
-          </div>
-        </div>
+        <div class="hero__content hero-copy">
+	<p class="eyebrow">Morning Lymphatic Ritual</p>
+	<h1 class="hero__title">WAKE UP WITH A FACE THAT LOOKS RESTED, LIGHTER, AND MORE DEFINED.</h1>
+	<p class="lead">A calm 10-minute practice to help reduce morning puffiness, release facial tension, and bring your features back.</p>
+	<p class="sublead">Gentle enough for daily use. Clear enough to follow at home. Created for women who want natural results with consistency.</p>
+	<div class="cta-row">
+		<a class="button button-primary" href="#offer">Start the ritual</a>
+		<a class="button button-secondary" href="#mechanism">See how it works</a>
+	</div>
+</div>
 
         <div class="hero-visual" aria-hidden="true">
           <div class="floating-card">
@@ -31,140 +37,275 @@
     </section>
 
     <section class="section section-light" id="problem">
-      <div class="container grid-two">
-        <div class="text-block">
-          <p class="eyebrow">Why puffiness happens</p>
-          <h2>Your face is not just puffy. It is holding tension and stagnant fluid.</h2>
-        </div>
-        <div class="panel">
-          <p>Many women blame age when they see swelling under the eyes, heaviness in the cheeks, or a softer jawline in the morning. But in many cases the issue starts with tight tissues around the neck and jaw, where drainage slows down overnight.</p>
-          <p>When the pathways stay compressed, fluid has nowhere to move. The face can look tired even after rest.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="mechanism">
-      <div class="container grid-two">
-        <div class="panel panel-dark">
-          <p class="eyebrow">The method</p>
-          <h2>First release. Then guide.</h2>
-          <p>This routine follows a simple order that helps the body respond better. We do not start by pushing the face. We start by softening the places where drainage gets blocked most often.</p>
-          <div class="price-ladder">
-            <div class="price-row"><span>Step 1</span><span>Relax the neck</span></div>
-            <div class="price-row"><span>Step 2</span><span>Release the jaw</span></div>
-            <div class="price-row"><span>Step 3</span><span>Activate drainage points</span></div>
-            <div class="price-row"><span>Step 4</span><span>Guide fluid gently</span></div>
-          </div>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <h3>Open the base</h3>
-            <p>Slow neck work helps reduce tightness where lymphatic flow often gets restricted first.</p>
-          </div>
-          <div class="step">
-            <h3>Soften the jawline</h3>
-            <p>Releasing tension around the jaw helps the lower face feel lighter and less compressed.</p>
-          </div>
-          <div class="step">
-            <h3>Use almost no pressure</h3>
-            <p>The movements are delicate and coordinated. The goal is not force, but direction.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="offer">
       <div class="container">
-        <p class="eyebrow">Low-risk first step</p>
-        <h2>Start with the Morning Lymphatic Massage lesson.</h2>
-        <div class="offer-grid">
-          <div class="offer-card">
-            <h3>A simple way in</h3>
-            <p>You get a guided video that shows the exact sequence, pace, and touch. No guesswork. No complicated routine to memorize.</p>
-            <div class="price">$9</div>
-            <div class="price-note">Starter entry</div>
-          </div>
-          <div class="offer-card">
-            <h3>What you can expect</h3>
-            <p>In about 10 minutes you learn how to repeat the full ritual each morning, so the practice becomes easy to keep.</p>
+        <div class="grid-two">
+          <div class="image-placeholder" aria-hidden="true"></div>
+          <div class="panel">
+            <p class="eyebrow">Why puffiness happens</p>
+            <h2>Your face is not just puffy. It is holding tension and stagnant fluid.</h2>
+            <div class="text-block">
+              <p>Many women blame age when they see swelling under the eyes, heaviness in the cheeks, or a softer jawline in the morning. But in many cases the issue starts with tight tissues around the neck and jaw, where drainage slows down overnight.</p>
+              <p>When the pathways stay compressed, fluid has nowhere to move. The face can look tired even after rest.</p>
+            </div>
             <div class="cta-row">
-              <a class="button button-primary" href="#proof">See what women notice</a>
+              <a class="button button-primary" href="#mechanism">See why it happens</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="proof">
-      <div class="container">
-        <p class="eyebrow">What changes first</p>
-        <h2>The first wins are usually visible and easy to feel.</h2>
-        <div class="proof-grid">
-          <div class="quote">
-            <div class="quote-mark">“</div>
-            <p>My face looked less swollen in the morning, especially around the eyes and lower cheeks.</p>
-          </div>
-          <div class="quote">
-            <div class="quote-mark">“</div>
-            <p>I noticed a cleaner jawline and that light feeling you get when tension finally leaves the face.</p>
-          </div>
-          <div class="quote">
-            <div class="quote-mark">“</div>
-            <p>It did not feel aggressive at all. It felt calm, precise, and surprisingly effective.</p>
-          </div>
-          <div class="quote">
-            <div class="quote-mark">“</div>
-            <p>The best part was how easy it was to repeat. It fit into my morning without becoming another task.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="section section-soft" id="mechanism">
+	<div class="container">
+		<div class="mechanism-layout">
+			<div class="mechanism-copy">
+				<p class="eyebrow">The method</p>
+				<h2>First release<br>Then guide</h2>
+				<p class="mechanism-lead">This ritual follows a simple order that helps the face respond better. We do not start with pressure. We start by opening the areas where drainage gets blocked most often.</p>
+				<div class="cta-row">
+					<a class="button button-primary" href="#offer">Start the ritual</a>
+				</div>
+			</div>
+
+			<div class="mechanism-gallery">
+				<article class="mechanism-item">
+					<div class="mechanism-photo mechanism-photo-1" aria-hidden="true"></div>
+					<div class="mechanism-item-body">
+						<p class="mechanism-step">Step 1</p>
+						<h3>Open the base</h3>
+						<p>Slow neck work helps reduce tightness where lymphatic flow often gets restricted first.</p>
+					</div>
+				</article>
+
+				<article class="mechanism-item">
+					<div class="mechanism-photo mechanism-photo-2" aria-hidden="true"></div>
+					<div class="mechanism-item-body">
+						<p class="mechanism-step">Step 2</p>
+						<h3>Soften the jawline</h3>
+						<p>Releasing tension around the jaw helps the lower face feel lighter and less compressed.</p>
+					</div>
+				</article>
+
+				<article class="mechanism-item">
+					<div class="mechanism-photo mechanism-photo-3" aria-hidden="true"></div>
+					<div class="mechanism-item-body">
+						<p class="mechanism-step">Step 3</p>
+						<h3>Activate drainage<br>points</h3>
+						<p>Small, precise touch around key pathways helps fluid move where it could not move before.</p>
+					</div>
+				</article>
+
+				<article class="mechanism-item">
+					<div class="mechanism-photo mechanism-photo-4" aria-hidden="true"></div>
+					<div class="mechanism-item-body">
+						<p class="mechanism-step">Step 4</p>
+						<h3>Guide fluid gently</h3>
+						<p>The final movements stay delicate and coordinated. The goal is not force, but direction.</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+    
+<section class="section" id="offer">
+	<div class="container">
+		<p class="eyebrow">Low-risk first step</p>
+		<h2>Start with the Morning Lymphatic Massage lesson</h2>
+
+		<div class="offer-layout">
+			<div class="offer-visual" aria-hidden="true"></div>
+
+			<div class="offer-content">
+				<div class="offer-block offer-block-top">
+					<h3>What you can expect</h3>
+					<p>In about 10 minutes you learn how to repeat the full ritual each morning, so the practice becomes easy to keep.</p>
+				</div>
+
+				<div class="offer-divider"></div>
+
+				<div class="offer-block offer-block-bottom">
+					<div class="offer-copy">
+						<h3>A simple way in</h3>
+						<ul class="offer-list">
+							<li>You get a guided video that shows the exact sequence, pace, and touch.</li>
+							<li>No guesswork.</li>
+							<li>No complicated routine to memorize.</li>
+						</ul>
+					</div>
+
+					<div class="offer-price-box">
+						<p class="offer-price-label">Low-risk first step</p>
+						<div class="offer-price-card">
+							<span class="offer-price-value">$9</span>
+							<span class="offer-price-note">Starter entry</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+   <section class="section" id="proof">
+	<div class="container">
+		<div class="proof-header">
+			<div class="proof-decor proof-decor-left" aria-hidden="true"></div>
+
+			<div class="proof-intro">
+				<p class="eyebrow">What changes first</p>
+				<h2>The first wins are usually visible and easy to feel</h2>
+				<p class="proof-subtitle">See what women notice</p>
+			</div>
+
+			<div class="proof-decor proof-decor-right" aria-hidden="true"></div>
+		</div>
+
+		<div class="proof-results">
+			<article class="proof-result-card">
+				<div class="proof-result-labels">
+					<span>Before</span>
+					<span>After</span>
+				</div>
+				<div class="proof-result-images">
+					<div class="proof-result-image proof-result-image-before" aria-hidden="true"></div>
+					<div class="proof-result-image proof-result-image-after" aria-hidden="true"></div>
+				</div>
+				<h3>Dane M</h3>
+				<p>My face looked less swollen in the morning, especially around the eyes and lower cheeks.</p>
+				<div class="proof-stars">★★★★★</div>
+			</article>
+
+			<article class="proof-result-card">
+				<div class="proof-result-labels">
+					<span>Before</span>
+					<span>After</span>
+				</div>
+				<div class="proof-result-images">
+					<div class="proof-result-image proof-result-image-before" aria-hidden="true"></div>
+					<div class="proof-result-image proof-result-image-after" aria-hidden="true"></div>
+				</div>
+				<h3>Rae C</h3>
+				<p>I noticed a cleaner jawline and that light feeling you get when tension finally leaves the face.</p>
+				<div class="proof-stars">★★★★★</div>
+			</article>
+
+			<article class="proof-result-card">
+				<div class="proof-result-labels">
+					<span>Before</span>
+					<span>After</span>
+				</div>
+				<div class="proof-result-images">
+					<div class="proof-result-image proof-result-image-before" aria-hidden="true"></div>
+					<div class="proof-result-image proof-result-image-after" aria-hidden="true"></div>
+				</div>
+				<h3>Luis H</h3>
+				<p>My face looked less swollen in the morning, especially around the eyes and lower cheeks.</p>
+				<div class="proof-stars">★★★★★</div>
+			</article>
+
+			<article class="proof-result-card">
+				<div class="proof-result-labels">
+					<span>Before</span>
+					<span>After</span>
+				</div>
+				<div class="proof-result-images">
+					<div class="proof-result-image proof-result-image-before" aria-hidden="true"></div>
+					<div class="proof-result-image proof-result-image-after" aria-hidden="true"></div>
+				</div>
+				<h3>Luis H</h3>
+				<p>The best part was how easy it was to repeat. It fit into my morning without becoming another task.</p>
+				<div class="proof-stars">★★★★★</div>
+			</article>
+		</div>
+	</div>
+</section>
 
     <section class="section section-light" id="education">
-      <div class="container">
-        <p class="eyebrow">Beyond one lesson</p>
-        <h2>When you are ready, the practice can become a full facial care system.</h2>
-        <div class="module-grid">
-          <div class="module">
-            <h3>Evening massage</h3>
-            <p>For deeper release at the end of the day, when the face and neck have been holding tension for hours.</p>
-          </div>
-          <div class="module">
-            <h3>Gua sha</h3>
-            <p>To support circulation and tissue stimulation with clear technique and gentle structure.</p>
-          </div>
-          <div class="module">
-            <h3>Taping</h3>
-            <p>For overnight support in areas that tend to crease, hold tension, or lose softness.</p>
-          </div>
-          <div class="module">
-            <h3>Breathing practice</h3>
-            <p>To improve circulation, reduce stress load, and make facial work more effective.</p>
-          </div>
-          <div class="module">
-            <h3>Daily ritual design</h3>
-            <p>So your routine stays simple, realistic, and easy to maintain over time.</p>
-          </div>
-          <div class="module">
-            <h3>Skin support</h3>
-            <p>Minimal product guidance that helps you support the face without cluttering the ritual.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+	<div class="container">
+		<div class="education-head">
+			<h2>When you are ready, the practice can become a full facial care system.</h2>
+			<p class="eyebrow">Beyond one lesson</p>
+		</div>
 
-    <section class="section section-soft" id="authority">
-      <div class="container authority-layout">
-        <div class="image-placeholder" aria-hidden="true"></div>
-        <div class="panel">
-          <p class="eyebrow">Professional foundation</p>
-          <h2>Built from methods used in real hands-on facial work.</h2>
-          <p>This approach translates professional principles into a form that feels safe and realistic at home. The sequence is structured, the touch is gentle, and every movement has a reason.</p>
-          <p>You do not need special experience. You just need the right order and a calm guide.</p>
-        </div>
-      </div>
-    </section>
+		<div class="education-grid">
+			<article class="education-card education-card-light">
+				<div class="education-card-top">
+					<h3>Evening massage</h3>
+				</div>
+				<div class="education-card-body">
+					<p>For deeper release at the end of the day, when the face and neck have been holding tension for hours.</p>
+				</div>
+			</article>
+
+			<article class="education-card education-card-dark">
+				<div class="education-card-top">
+					<h3>Gua sha</h3>
+				</div>
+				<div class="education-card-body">
+					<p>To support circulation and tissue stimulation with clear technique and gentle structure.</p>
+				</div>
+			</article>
+
+			<article class="education-card education-card-light">
+				<div class="education-card-top">
+					<h3>Taping</h3>
+				</div>
+				<div class="education-card-body">
+					<p>For overnight support in areas that tend to crease, hold tension, or lose softness.</p>
+				</div>
+			</article>
+
+			<article class="education-card education-card-dark">
+				<div class="education-card-top">
+					<h3>Breathing practice</h3>
+				</div>
+				<div class="education-card-body">
+					<p>To improve circulation, reduce stress load, and make facial work more effective.</p>
+				</div>
+			</article>
+
+			<article class="education-card education-card-light">
+				<div class="education-card-top">
+					<h3>Daily ritual design</h3>
+				</div>
+				<div class="education-card-body">
+					<p>So your routine stays simple, realistic, and easy to maintain over time.</p>
+				</div>
+			</article>
+
+			<article class="education-card education-card-dark">
+				<div class="education-card-top">
+					<h3>Skin support</h3>
+				</div>
+				<div class="education-card-body">
+					<p>Minimal product guidance that helps you support the face without cluttering the ritual.</p>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>
+
+  <section class="section section-soft" id="authority">
+	<div class="container authority-split">
+		<div class="authority-copy">
+			<p class="eyebrow">Professional foundation</p>
+			<h2>Built from methods used in real hands-on facial work</h2>
+			<p>This approach translates professional principles into a form that feels safe and realistic at home. The sequence is structured, the touch is gentle, and every movement has a reason.</p>
+			<p>You do not need special experience. You just need the right order and a calm guide.</p>
+			<div class="cta-row">
+				<a class="button button-primary authority-button" href="#offer">Try it for $9</a>
+			</div>
+		</div>
+
+		<div class="authority-media">
+	<video class="authority-video" controls playsinline poster="img/image_07.png">
+		<source src="video/authority-video.mp4" type="video/mp4">
+	</video>
+			</div>
+		</div>
+	</div>
+</section>
 
     <section class="section section-light" id="story">
       <div class="container story-layout">
@@ -267,3 +408,5 @@
   </div>
 </body>
 </html>
+
+

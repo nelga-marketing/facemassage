@@ -1,0 +1,107 @@
+/* ------------------------------ typography ------------------------------ */
+
+:root {
+	/* --font-heading: "Cormorant Garamond", "EB Garamond", "Playfair Display", serif; */
+	--font-heading: "Arimo", sans-serif;
+	--font-body: "Arimo", sans-serif;
+	--font-ui: "Arimo", sans-serif;
+	--font-accent: "Arimo", sans-serif;
+	--font-size-eyebrow: 12px;
+	--font-size-lead: 22px;
+	--font-size-sublead: 18px;
+	--font-size-body: 17px;
+	--font-size-price: 36px;
+	--font-size-price-note: 13px;
+	--font-size-fineprint: 12px;
+	--font-size-quote-mark: 56px;
+	--font-size-h3: 28px;
+	--font-size-module-title: 24px;
+	--font-size-faq-title: 22px;
+	--font-size-step-index: 13px;
+	--font-size-price-row: 14px;
+	--font-size-footer: 13px;
+	--font-size-hero-title: 64px;
+	--line-height-hero-title: 0.96;
+	--letter-spacing-hero-title: 0.04em;
+	--font-weight-hero-title: 400;
+}
+
+/* ------------------------------ colors ------------------------------ */
+
+:root {
+	--color-bg-main: #e0d4cc;
+	--color-bg-soft: #d1c5bd;
+	--color-bg-light: #f7f4f1;
+	--color-bg-light-secondary: #eee8e3;
+	--color-neutral-100: #e0d4cc;
+	--color-neutral-200: #d1c5bd;
+	--color-neutral-300: #aa9e95;
+	--color-neutral-400: #857568;
+	--color-neutral-500: #716258;
+	--color-brown-600: #5d4736;
+	--color-brown-700: #4c3425;
+	--color-brown-800: #33251d;
+	--color-accent-caramel: #b2773a;
+	--color-text-primary: #33251d;
+	--color-text-secondary: #5d4736;
+	--color-text-muted: #857568;
+	--color-text-on-dark: #f7f4f1;
+	--color-border-soft: #d1c5bd;
+	--color-border-medium: #aa9e95;
+	--color-button-bg: #4c3425;
+	--color-button-bg-hover: #33251d;
+	--color-button-text: #f7f4f1;
+	--color-button-secondary-bg: #b2773a;
+	--color-button-secondary-bg-hover: #9a6632;
+	--color-button-secondary-text: #f7f4f1;
+	--color-section-highlight: #eee8e3;
+	--color-card-bg: #f7f4f1;
+}
+
+/* ------------------------------ spacing-and-radius ------------------------------ */
+
+:root {
+	--radius-sm: 8px;
+	--radius-md: 12px;
+	--radius-lg: 20px;
+	--radius-xl: 22px;
+	--radius-2xl: 24px;
+	--radius-3xl: 26px;
+	--radius-4xl: 28px;
+	--radius-pill: 999px;
+	--space-xs: 4px;
+	--space-sm: 8px;
+	--space-md: 16px;
+	--space-lg: 24px;
+	--space-xl: 40px;
+	--space-2xl: 64px;
+	--space-section-y: 88px;
+	--space-section-y-mobile: 72px;
+	--space-container-x: 48px;
+	--space-container-x-mobile: 28px;
+	--space-hero-top-mobile: 56px;
+	--space-hero-bottom-mobile: 72px;
+	--space-footer-top: 28px;
+	--space-footer-bottom: 42px;
+	--space-hero-content-top: 56px;
+	--space-hero-title-bottom: 20px;
+}
+
+/* ------------------------------ sizing ------------------------------ */
+
+:root {
+	--container-max: 1120px;
+	--hero-visual-min-height: 640px;
+	--hero-visual-min-height-mobile: 420px;
+	--image-placeholder-min-height: 440px;
+	--floating-card-max-width: 320px;
+	--button-min-height: 52px;
+	--step-index-size: 34px;
+	--h1-max-ch: 10ch;
+	--h2-max-ch: 12ch;
+	--lead-max-ch: 34ch;
+	--sublead-max-ch: 36ch;
+	--text-block-max-ch: 38ch;
+	--hero-copy-max-width: 620px;
+	--hero-title-max-width: 460px;
+}
