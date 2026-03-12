@@ -1,61 +1,72 @@
 /* ------------------------------ typography ------------------------------ */
 
 :root {
-	/* --font-heading: "Cormorant Garamond", "EB Garamond", "Playfair Display", serif; */
 	--font-heading: "Arimo", sans-serif;
 	--font-body: "Arimo", sans-serif;
 	--font-ui: "Arimo", sans-serif;
 	--font-accent: "Arimo", sans-serif;
+
+	--font-weight-heading: 500;
+
 	--font-size-eyebrow: 12px;
-	--font-size-lead: 22px;
-	--font-size-sublead: 18px;
 	--font-size-body: 17px;
 	--font-size-price: 36px;
 	--font-size-price-note: 13px;
 	--font-size-fineprint: 12px;
-	--font-size-quote-mark: 56px;
-	--font-size-h3: 28px;
-	--font-size-module-title: 24px;
-	--font-size-faq-title: 22px;
+	--font-size-footer: 13px;
 	--font-size-step-index: 13px;
 	--font-size-price-row: 14px;
-	--font-size-footer: 13px;
-	--font-size-hero-title: 64px;
-	--line-height-hero-title: 0.96;
-	--letter-spacing-hero-title: 0.04em;
-	--font-weight-hero-title: 400;
-}
 
+	--font-size-h1: 88px;
+	--font-size-h2: 58px;
+	--font-size-h3: 28px;
+
+	--font-size-h1-tablet: 56px;
+	--font-size-h2-tablet: 42px;
+	--font-size-h3-tablet: 24px;
+
+	--font-size-h1-mobile: 40px;
+	--font-size-h2-mobile: 34px;
+	--font-size-h3-mobile: 22px;
+
+	--line-height-body: 1.5;
+	--line-height-heading: 0.96;
+	--line-height-heading-tight: 0.92;
+
+	--letter-spacing-eyebrow: 0.18em;
+	--letter-spacing-eyebrow-mobile: 0.16em;
+	--letter-spacing-ui: 0.08em;
+}
 /* ------------------------------ colors ------------------------------ */
 
 :root {
-	--color-bg-main: #e0d4cc;
-	--color-bg-soft: #d1c5bd;
+	--color-bg-main: #c6beb6;
+	--color-bg-soft: #e7ddd6;
 	--color-bg-light: #f7f4f1;
-	--color-bg-light-secondary: #eee8e3;
-	--color-neutral-100: #e0d4cc;
-	--color-neutral-200: #d1c5bd;
-	--color-neutral-300: #aa9e95;
-	--color-neutral-400: #857568;
-	--color-neutral-500: #716258;
-	--color-brown-600: #5d4736;
-	--color-brown-700: #4c3425;
-	--color-brown-800: #33251d;
-	--color-accent-caramel: #b2773a;
-	--color-text-primary: #33251d;
-	--color-text-secondary: #5d4736;
-	--color-text-muted: #857568;
+	--color-bg-card: #f7f2ee;
+	--color-bg-panel: rgba(247, 244, 241, 0.72);
+	--color-bg-overlay-light: rgba(255, 255, 255, 0.42);
+
+	--color-page-main: #f3efeb;
+
+	--color-brown-main: #2f221b;
+
+	--color-text-primary: var(--color-brown-main);
+	--color-text-secondary: var(--color-brown-main);
+	--color-text-muted: var(--color-brown-main);
 	--color-text-on-dark: #f7f4f1;
-	--color-border-soft: #d1c5bd;
-	--color-border-medium: #aa9e95;
-	--color-button-bg: #4c3425;
-	--color-button-bg-hover: #33251d;
+
+	--color-border-soft: #d8ccc3;
+	--color-border-light: rgba(47, 34, 27, 0.08);
+	--color-border-medium: rgba(47, 34, 27, 0.18);
+
+	--color-button-bg: var(--color-brown-main);
 	--color-button-text: #f7f4f1;
-	--color-button-secondary-bg: #b2773a;
-	--color-button-secondary-bg-hover: #9a6632;
-	--color-button-secondary-text: #f7f4f1;
-	--color-section-highlight: #eee8e3;
-	--color-card-bg: #f7f4f1;
+	--color-button-secondary-border: rgba(47, 34, 27, 0.22);
+	--color-button-secondary-text: var(--color-brown-main);
+
+	--color-surface-placeholder: #ddd6d0;
+	--color-surface-video: #e7d7dd;
 }
 
 /* ------------------------------ spacing-and-radius ------------------------------ */
@@ -69,12 +80,14 @@
 	--radius-3xl: 26px;
 	--radius-4xl: 28px;
 	--radius-pill: 999px;
+
 	--space-xs: 4px;
 	--space-sm: 8px;
 	--space-md: 16px;
 	--space-lg: 24px;
 	--space-xl: 40px;
 	--space-2xl: 64px;
+
 	--space-section-y: 88px;
 	--space-section-y-mobile: 72px;
 	--space-container-x: 48px;
@@ -91,17 +104,32 @@
 
 :root {
 	--container-max: 1120px;
+	--container-wide: 1280px;
+	--container-full: 1360px;
+
 	--hero-visual-min-height: 640px;
 	--hero-visual-min-height-mobile: 420px;
 	--image-placeholder-min-height: 440px;
 	--floating-card-max-width: 320px;
+
 	--button-min-height: 52px;
+	--button-min-height-lg: 60px;
+
 	--step-index-size: 34px;
+
 	--h1-max-ch: 10ch;
 	--h2-max-ch: 12ch;
-	--lead-max-ch: 34ch;
-	--sublead-max-ch: 36ch;
 	--text-block-max-ch: 38ch;
+
 	--hero-copy-max-width: 620px;
 	--hero-title-max-width: 460px;
+}
+
+/* ------------------------------ responsive-typography ------------------------------ */
+
+:root {
+	--font-size-h1-tablet: 48px;
+	--font-size-h2-tablet: 42px;
+	--font-size-h1-mobile: 34px;
+	--font-size-h2-mobile: 34px;
 }
