@@ -1,0 +1,79 @@
+.page {
+	width            : min(1200px, 100%);
+	margin-inline    : auto;
+	box-sizing       : border-box;
+	background       : var(--color-page-main);
+	height           : 100vh;
+	overflow-y       : auto;
+	scroll-snap-type : y mandatory;
+	scrollbar-width  : none;
+	-ms-overflow-style : none;
+}
+
+	.page::-webkit-scrollbar {
+		width   : 0;
+		height  : 0;
+		display : none;
+	}
+
+.section {
+	position          : relative;
+	min-height        : 100vh;
+	display           : grid;
+	align-items       : center;
+	scroll-snap-align : start;
+	scroll-snap-stop  : always;
+	padding           : 48px 0;
+	box-sizing        : border-box;
+}
+
+	.section .container {
+		width      : min(var(--container-max, 1240px), calc(100% - 120px));
+		margin     : 0 auto;
+		box-sizing : border-box;
+	}
+
+@media (max-width : 768px) {
+	.page {
+		height           : auto;
+		overflow         : visible;
+		scroll-snap-type : none;
+	}
+
+	.section {
+		min-height        : auto;
+		display           : block;
+		scroll-snap-align : none;
+		scroll-snap-stop  : normal;
+		padding           : 32px 0;
+	}
+
+		.section .container {
+			width : min(var(--container-max, 1240px), calc(100% - 40px));
+		}
+}
+
+@media (max-width : 980px) {
+	.page #problem .problem-content h2,
+	.page #mechanism h2,
+	.page #offer h2,
+	.page #proof h2,
+	.page #education h2,
+	.page #authority h2,
+	.page #story h2,
+	.page #story .story-content h2,
+	.page #offer-again h2,
+	.page #final-cta h2 {
+		max-width : 100%;
+	}
+}
+
+@media (max-width : 640px) {
+	.page #offer-again h2 {
+		max-width : 320px;
+	}
+
+	.page #final-cta h2 {
+		max-width : 240px;
+	}
+}

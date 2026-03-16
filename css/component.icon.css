@@ -1,0 +1,7 @@
+.icon {
+	display           : block;
+	border-radius     : 50%;
+	background-image  : url("../img/methods-sprite.png");
+	background-repeat : no-repeat;
+	background-size   : 230px 154px;
+}

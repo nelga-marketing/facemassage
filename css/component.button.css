@@ -1,0 +1,35 @@
+.button {
+	display         : inline-flex;
+	align-items     : center;
+	justify-content : center;
+	min-height      : var(--button-min-height-lg);
+	padding         : 0 38px;
+	border-radius   : var(--radius-pill);
+	border          : 1px solid transparent;
+	transition      : 0.2s ease;
+}
+
+	.button.button-primary {
+		background : var(--color-button-bg);
+		color      : var(--color-button-text);
+	}
+
+	.button.button-secondary {
+		background   : transparent;
+		color        : var(--color-button-secondary-text);
+		border-color : var(--color-button-secondary-border);
+	}
+
+@media (max-width : 980px) {
+	.button {
+		width           : 100%;
+		justify-content : center;
+	}
+}
+
+@media (max-width : 640px) {
+	.button {
+		min-height : 54px;
+		padding    : 0 22px;
+	}
+}

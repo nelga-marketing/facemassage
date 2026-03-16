@@ -1,0 +1,80 @@
+.card {
+	flex                  : 0 0 calc((100% - 20px) / 2);
+	min-height            : 278px;
+	padding               : 18px 20px 20px;
+	background            : var(--color-bg-light);
+	display               : flex;
+	flex-direction        : column;
+	align-items           : center;
+	text-align            : center;
+	box-sizing            : border-box;
+}
+
+	.card .media {
+		display               : grid;
+		grid-template-columns : 1fr 1fr;
+		gap                   : 12px;
+		width                 : 100%;
+		max-width             : 230px;
+		margin                : 0 auto 14px;
+	}
+
+	.card .col {
+		display        : flex;
+		flex-direction : column;
+		align-items    : center;
+	}
+
+	.card .label {
+		margin         : 0 0 8px;
+		color          : var(--color-text-primary);
+	}
+
+	.card .image {
+		width        : 100%;
+		aspect-ratio : 1 / 1.15;
+	}
+
+	.card .name {
+		margin      : 0 0 10px;
+		color       : var(--color-text-primary);
+	}
+
+	.card .quote {
+		margin      : 0 0 14px;
+		max-width   : 260px;
+		color       : var(--color-text-primary);
+	}
+
+	.card .stars {
+		margin-top      : auto;
+		color           : var(--color-text-primary);
+	}
+
+@media (max-width : 980px) {
+	.card {
+		flex       : 0 0 100%;
+		min-height : 268px;
+	}
+}
+
+@media (max-width : 640px) {
+	.card {
+		min-height : 244px;
+		padding    : 18px 18px 20px;
+	}
+
+	.card .media {
+		max-width : 200px;
+		gap       : 10px;
+	}
+
+	.card .label {
+	}
+
+	.card .name {
+	}
+
+	.card .stars {
+	}
+}
