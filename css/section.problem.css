@@ -1,0 +1,151 @@
+#problem {
+	background    : var(--color-page-main);
+	margin        : 0;
+	border-radius : 0;
+	overflow      : hidden;
+}
+
+	#problem .container {
+		min-height    : 62vh;
+		border-radius : 0;
+	}
+
+	#problem .grid-two {
+		display               : grid;
+		grid-template-columns : 560px 1fr;
+		gap                   : 0;
+		width                 : 100%;
+		min-height            : 62vh;
+		align-items           : stretch;
+		border-radius         : 0;
+		background            : var(--color-page-main);
+	}
+
+	#problem .image-placeholder {
+		width               : 100%;
+		height              : 100%;
+		min-height          : 62vh;
+		background-image    : url("../img/image_02.png");
+		background-position : left center;
+		background-color    : var(--color-page-main);
+		border-radius       : 0;
+	}
+
+	#problem .panel {
+		padding         : 54px 40px 22px 80px;
+		display         : flex;
+		flex-direction  : column;
+		justify-content : flex-start;
+		border-radius   : 0;
+		border          : 1px solid var(--color-border-soft);
+		background      : var(--color-page-main);
+	}
+
+	#problem .problem-content {
+		max-width : 100%;
+	}
+
+	#problem .problem-content h2 {
+		max-width : 700px;
+	}
+
+	#problem .problem-content h3 {
+		margin    : 0 0 28px;
+		max-width : 700px;
+	}
+
+	#problem .text-block {
+		max-width : 640px;
+	}
+
+	#problem .text-block h5 {
+		margin : 0 0 16px;
+	}
+
+	#problem .text-block h5:last-child {
+		margin-bottom : 0;
+	}
+
+	#problem .cta-row {
+		margin-top : 26px;
+	}
+
+@media (max-width : 1200px) {
+	#problem,
+	#problem .container,
+	#problem .grid-two,
+	#problem .image-placeholder {
+		min-height : 68vh;
+	}
+
+	#problem .grid-two {
+		grid-template-columns : 460px 1fr;
+	}
+
+	#problem .panel {
+		padding : 44px 32px 24px 56px;
+	}
+}
+
+@media (max-width : 980px) {
+	#problem,
+	#problem .container,
+	#problem .grid-two {
+		min-height : auto;
+	}
+
+	#problem .grid-two {
+		grid-template-columns : 1fr;
+	}
+
+	#problem .image-placeholder {
+		height              : 520px;
+		min-height          : 520px;
+		background-position : center top;
+	}
+
+	#problem .panel {
+		padding : 38px 28px 34px;
+	}
+
+	#problem .problem-content h2 {
+		max-width : 100%;
+	}
+
+	#problem .problem-content h3 {
+		max-width : 100%;
+		margin    : 0 0 24px;
+	}
+
+	#problem .text-block,
+	#problem .text-block h5 {
+		max-width : 100%;
+	}
+
+	#problem .text-block h5 {
+		margin : 0 0 14px;
+	}
+
+	#problem .cta-row {
+		margin-top : 22px;
+	}
+}
+
+@media (max-width : 640px) {
+	#problem .image-placeholder {
+		height     : 380px;
+		min-height : 380px;
+	}
+
+	#problem .panel {
+		padding : 28px 16px 28px;
+	}
+
+	#problem .problem-content h3 {
+		margin-bottom : 20px;
+	}
+
+	#problem .text-block h5 {
+		margin-bottom : 14px;
+	}
+}

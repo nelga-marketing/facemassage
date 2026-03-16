@@ -1,0 +1,113 @@
+#guarantee {
+	background : var(--color-page-main);
+}
+
+	#guarantee .guarantee-head {
+		max-width : 940px;
+		margin    : 0 auto 18px;
+	}
+
+	#guarantee .guarantee-head h2 {
+		max-width : 100%;
+	}
+
+	#guarantee .guarantee-head h5 {
+		margin    : 0 auto;
+		max-width : 830px;
+	}
+
+	#guarantee .guarantee-middle {
+		display               : grid;
+		grid-template-columns : minmax(0, 640px) 6cm;
+		column-gap            : 56px;
+		justify-content       : center;
+		align-items           : start;
+		margin-top            : 18px;
+	}
+
+	#guarantee .guarantee-photo-right {
+		width            : 6cm;
+		height           : 8cm;
+		background-image : url("../img/image_11.png");
+		justify-self     : end;
+	}
+
+	#guarantee .price-ladder {
+		max-width  : 640px;
+		margin     : 0 auto 16px;
+		gap        : 12px;
+		border-top : 1px solid var(--color-border-light);
+	}
+
+	#guarantee .price-row {
+		display               : grid;
+		grid-template-columns : 75% 25%;
+		column-gap            : 20px;
+		align-items           : center;
+		padding               : 12px 0;
+		border-bottom         : 1px solid var(--color-border-light);
+	}
+
+	#guarantee .price-value {
+		display         : flex;
+		justify-content : flex-end;
+		gap             : 10px;
+		white-space     : nowrap;
+	}
+
+	#guarantee .price-value .text-button-small {
+		opacity : 0.75;
+	}
+
+	#guarantee small {
+		margin    : 0 auto;
+		max-width : 470px;
+	}
+
+	#guarantee .guarantee-offers {
+		display               : grid;
+		grid-template-columns : repeat(2, minmax(0, 1fr));
+		max-width             : 560px;
+		margin                : 22px auto 0;
+		background            : var(--color-bg-card);
+		box-shadow            : 0 0 0 1px var(--color-border-light);
+	}
+
+@media (max-width : 980px) {
+	#guarantee {
+		padding : 34px 0 40px;
+	}
+
+	#guarantee .guarantee-head h5 {
+		max-width : 100%;
+	}
+
+	#guarantee .guarantee-middle {
+		grid-template-columns : 1fr;
+		row-gap               : 22px;
+		margin-top            : 20px;
+	}
+
+	#guarantee .guarantee-photo-right {
+		width        : 100%;
+		max-width    : 260px;
+		height       : 360px;
+		justify-self : center;
+	}
+
+	#guarantee .guarantee-offers {
+		grid-template-columns : 1fr;
+		max-width             : 100%;
+		margin-top            : 24px;
+	}
+}
+
+@media (max-width : 640px) {
+	#guarantee {
+		padding : 28px 0 34px;
+	}
+
+	#guarantee .guarantee-photo-right {
+		height : 320px;
+	}
+}

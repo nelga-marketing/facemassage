@@ -1,14 +1,17 @@
-.text-overline {
-	margin         : 0 0 10px;
-	font-family    : var(--font-ui);
-	font-size      : 14px;
-	line-height    : 1.2;
-	letter-spacing : 0.2em;
-	text-transform : uppercase;
-	color          : var(--color-brown-main);
+
+/*************************************************************************/
+
+body {
+	font-family : var(--font-body);
+	font-size   : var(--font-size-body-lg);
+	line-height : 1.6;
+	color       : var(--color-brown-main);
 }
 
-.text-title {
+
+/*************************************************************************/
+
+h1 {
 	margin         : 0 0 20px;
 	max-width      : 430px;
 	font-family    : var(--font-heading);
@@ -21,11 +24,34 @@
 	text-align     : var(--heading-align);
 }
 
-	.text-title .highlight {
+	h1 b {
 		color : var(--color-brown-main);
 	}
 
-.text-subtitle {
+
+/*************************************************************************/
+
+h2 {
+	margin         : 0 0 20px;
+	max-width      : 430px;
+	font-family    : var(--font-heading);
+	font-size      : var(--heading-size);
+	line-height    : var(--heading-line);
+	letter-spacing : var(--heading-letter);
+	font-weight    : var(--font-weight-heading);
+	text-transform : uppercase;
+	color          : var(--heading-color);
+	text-align     : var(--heading-align);
+}
+
+	h2 b {
+		color : var(--color-brown-main);
+	}
+
+
+/*************************************************************************/
+
+h3 {
 	margin         : 0 0 28px;
 	max-width      : 700px;
 	font-family    : var(--font-heading);
@@ -37,20 +63,51 @@
 	color          : var(--heading-color);
 }
 
-.text-body {
+	h3 b {
+		color : var(--color-brown-main);
+	}
+
+
+/*************************************************************************/
+
+h4 {
+	margin         : 0 0 10px;
+	font-family    : var(--font-ui);
+	font-size      : 14px;
+	line-height    : 1.2;
+	letter-spacing : 0.2em;
+	text-transform : uppercase;
+	color          : var(--color-brown-main);
+}
+
+	h4 b {
+		color : var(--color-brown-main);
+	}
+
+
+/*************************************************************************/
+
+h5 {
 	margin      : 0 0 24px;
-	max-width   : 480px;
 	font-family : var(--font-body);
 	font-size   : var(--font-size-body-lg);
 	line-height : 1.6;
-	color       : var(--color-text-secondary);
+	color       : var(--color-brown-main);
 }
 
-.text-small {
+	h5 b {
+		color : var(--color-brown-main);
+	}
+
+
+small {
 	font-family : var(--font-body);
 	font-size   : var(--font-size-body-2xs);
 	line-height : 1.55;
+	color       : var(--color-brown-main);
 }
+
+/*************************************************************************/
 
 .text-button-small {
 	font-family    : var(--font-ui);
@@ -80,34 +137,42 @@
 }
 
 @media (max-width : 640px) {
-	.text-overline {
-		font-size      : 11px;
-		letter-spacing : 0.16em;
-		margin-bottom  : 8px;
-	}
-
-	.text-title.text-title {
+	h1 {
 		max-width   : 240px;
 		font-size   : 34px;
 		line-height : 0.96;
 	}
 
-	.text-subtitle {
+	h2 {
+		max-width   : 240px;
+		font-size   : 34px;
+		line-height : 0.96;
+	}
+
+	h3 {
 		font-size   : 22px;
 		line-height : 1.05;
 		margin      : 0 0 20px;
 	}
 
-	.text-body {
+	h4 {
+		font-size      : 11px;
+		letter-spacing : 0.16em;
+		margin-bottom  : 8px;
+	}
+
+	h5 {
 		font-size   : var(--font-size-body-sm);
 		line-height : 1.52;
 		margin      : 0 0 16px;
 	}
 
-	.text-small {
-		font-size   : var(--font-size-body-xs);
-		line-height : 1.45;
+	body {
+		font-size   : var(--font-size-body-sm);
+		line-height : 1.52;
 	}
+
+/*************************************************************************/
 
 	.text-button-small {
 		font-size : var(--font-size-footer);

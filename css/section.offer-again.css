@@ -1,0 +1,73 @@
+#offer-again {
+	background-image    : url("../img/image_09.png");
+	background-position : center 20%;
+	overflow            : hidden;
+	position            : relative;
+}
+
+	#offer-again .container {
+		position : relative;
+		z-index  : 2;
+	}
+
+	#offer-again .offer-again-hero {
+		min-height  : 255px;
+		display     : flex;
+		align-items : flex-start;
+		position    : relative;
+		z-index     : 2;
+	}
+
+	#offer-again .offer-again-copy {
+		max-width : 560px;
+	}
+
+	#offer-again .offer-again-copy h2 {
+		max-width : 560px;
+	}
+
+	#offer-again .offer-again-cards {
+		display               : grid;
+		grid-template-columns : repeat(2, minmax(0, 560px));
+		justify-content       : start;
+		gap                   : 34px;
+		margin-top            : -12px;
+		position              : relative;
+		z-index               : 3;
+	}
+
+@media (max-width : 980px) {
+	#offer-again h2 {
+		max-width : 100%;
+	}
+
+	#offer-again {
+		background-position : center top;
+		padding             : 40px 0 40px;
+	}
+
+	#offer-again .offer-again-hero {
+		min-height    : auto;
+		margin-bottom : 18px;
+	}
+
+	#offer-again .offer-again-copy {
+		max-width : 100%;
+	}
+
+	#offer-again .offer-again-cards {
+		grid-template-columns : 1fr;
+		gap                   : 18px;
+		margin-top            : 0;
+	}
+}
+
+@media (max-width : 640px) {
+	#offer-again h2 {
+		max-width : 320px;
+	}
+
+	#offer-again {
+		padding : 32px 0 34px;
+	}
+}
