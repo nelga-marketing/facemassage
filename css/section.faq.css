@@ -26,8 +26,9 @@
 	}
 
 	#faq .faq-side-image-left {
-		background-image : url("../img/image_10.png");
-		margin-top       : 0;
+		background-image : url("../img/image_08.png");
+		height           : 400px;
+		margin-top       : 80px;
 	}
 
 	#faq .faq-side-image-right {
@@ -83,6 +84,10 @@
 		height : 240px;
 	}
 
+	#faq .faq-side-image-left {
+		height : 300px;
+	}
+
 	#faq .faq-center {
 		row-gap : 14px;
 	}
@@ -95,6 +100,10 @@
 @media (max-width : 640px) {
 	#faq .faq-side-image {
 		height : 200px;
+	}
+
+	#faq .faq-side-image-left {
+		height : 250px;
 	}
 
 	#faq .faq-center {

@@ -12,6 +12,7 @@
 	scroll-snap-type : y mandatory;
 	scrollbar-width  : none;
 	-ms-overflow-style : none;
+	overflow-x         : hidden;
 }
 
 	/* DO NOT REMOVE!

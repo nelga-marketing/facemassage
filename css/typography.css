@@ -76,13 +76,17 @@ h3 {
 	font-size      : clamp(25px, 3.2vw, 45px);
 	line-height    : 0.98;
 	letter-spacing : -0.02em;
-	font-weight    : 400;
+	font-weight    : 400 !important;
 	text-transform : uppercase;
 	color          : var(--color-gbnd);
 }
 
 	h3 b {
 		color : var(--color-brown-main);
+	}
+
+	h3 :is(b, strong) {
+		font-weight : 400 !important;
 	}
 
 
@@ -110,6 +114,7 @@ h5 {
 	font-family : var(--font-body);
 	font-size   : var(--font-size-body-lg);
 	line-height : 1.6;
+	font-weight : 400;
 	color       : var(--color-brown-main);
 }
 

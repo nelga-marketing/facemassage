@@ -19,17 +19,52 @@
 		max-width : 420px;
 	}
 
+	#education .education-left h1 b {
+		color          : inherit;
+		font-size      : inherit;
+		font-weight    : inherit;
+		line-height    : inherit;
+		letter-spacing : inherit;
+	}
+
 	#education .education-photo {
 		width            : 100%;
 		max-width        : 420px;
 		height           : 240px;
 		margin-bottom    : 14px;
-		background-image : url("../img/image_07.png");
+		background-image : url("../img/image_17.png");
 	}
 
 	#education .education-right {
-		padding-top : 70px;
-		min-width   : 0;
+		padding-top            : 70px;
+		min-width              : 0;
+		display                : grid;
+		grid-template-columns  : minmax(0, 1fr) auto;
+		column-gap             : 14px;
+		align-items            : start;
+	}
+
+	#education .education-right .icon-list {
+		grid-column : 1 / -1;
+	}
+
+	#education .education-price-button {
+		grid-column  : 2;
+		margin-top   : 24px;
+		margin-left  : 0;
+		justify-self : end;
+	}
+
+	#education .education-price-note {
+		display      : block;
+		grid-column  : 2;
+		margin-top   : 8px;
+		margin-left  : 0;
+		max-width    : none;
+		width        : 100%;
+		text-align   : center;
+		justify-self : end;
+		align-self   : start;
 	}
 
 @media (max-width : 980px) {

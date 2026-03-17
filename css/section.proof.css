@@ -9,6 +9,22 @@
 		column-gap            : 36px;
 		align-items           : start;
 		margin-bottom         : 38px;
+		position              : relative;
+	}
+
+	#proof .top::after {
+		content             : "";
+		position            : absolute;
+		top                 : 120px;
+		right               : 0;
+		width               : 240px;
+		height              : 150px;
+		background-image    : url("../img/image_07.png");
+		background-repeat   : no-repeat;
+		background-size     : cover;
+		background-position : center;
+		z-index             : 4;
+		pointer-events      : none;
 	}
 
 	#proof .top-image-left {
@@ -17,9 +33,12 @@
 	}
 
 	#proof .top-image-right {
-		height           : 150px;
-		background-image : url("../img/image_09.png");
-		justify-self     : end;
+		height              : 150px;
+		background-image    : url("../img/image_09.png");
+		background-position : center;
+		justify-self        : end;
+		position            : relative;
+		overflow            : hidden;
 	}
 
 	#proof .intro {
@@ -75,6 +94,10 @@
 		grid-template-columns : 1fr;
 		row-gap               : 18px;
 		margin-bottom         : 26px;
+	}
+
+	#proof .top::after {
+		display : none;
 	}
 
 	#proof .top-image-left,
