@@ -1,0 +1,9 @@
+.image {
+	border-radius : 40px 0 40px 0;
+}
+
+@media (max-width : 640px) {
+	.image {
+		border-radius : 28px 0 28px 0;
+	}
+}

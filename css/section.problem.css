@@ -28,7 +28,6 @@
 		background-image    : url("../img/image_02.png");
 		background-position : left center;
 		background-color    : var(--color-page-main);
-		border-radius       : 0;
 	}
 
 	#problem .panel {
@@ -45,7 +44,7 @@
 		max-width : 100%;
 	}
 
-	#problem .problem-content h2 {
+	#problem .problem-content h1 {
 		max-width : 700px;
 	}
 
@@ -108,7 +107,7 @@
 		padding : 38px 28px 34px;
 	}
 
-	#problem .problem-content h2 {
+	#problem .problem-content h1 {
 		max-width : 100%;
 	}
 

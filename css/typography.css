@@ -10,24 +10,42 @@ body {
 
 
 /*************************************************************************/
-
 h1 {
+	position       : relative;
 	margin         : 0 0 20px;
 	max-width      : 430px;
+	padding-left   : 20px;
+	text-indent    : -39px;
+
 	font-family    : var(--font-heading);
 	font-size      : var(--heading-size);
 	line-height    : var(--heading-line);
 	letter-spacing : var(--heading-letter);
 	font-weight    : var(--font-weight-heading);
 	text-transform : uppercase;
-	color          : var(--heading-color);
 	text-align     : var(--heading-align);
+
+	color          : rgba(75, 46, 32, 0.7);
 }
+
+	h1::first-line {
+		color : rgba(75, 46, 32, 1);
+	}
+
+	h1::before {
+		content       : '';
+		position      : absolute;
+		left          : 0;
+		top           : calc(1em * var(--heading-line) + 2px);
+		bottom        : 2px;
+		width         : 5px;
+		border-radius : 3px;
+		background    : #4b2e20;
+	}
 
 	h1 b {
 		color : var(--color-brown-main);
 	}
-
 
 /*************************************************************************/
 
@@ -60,7 +78,7 @@ h3 {
 	letter-spacing : -0.02em;
 	font-weight    : 400;
 	text-transform : uppercase;
-	color          : var(--heading-color);
+	color          : var(--color-gbnd);
 }
 
 	h3 b {

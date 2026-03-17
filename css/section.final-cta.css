@@ -17,7 +17,7 @@
 		align-items    : flex-start;
 	}
 
-	#final-cta .final-cta-copy h2 {
+	#final-cta .final-cta-copy h1 {
 		max-width : 430px;
 	}
 
@@ -36,7 +36,7 @@
 	}
 
 @media (max-width : 980px) {
-	#final-cta h2 {
+	#final-cta h1 {
 		max-width : 100%;
 	}
 
@@ -61,7 +61,7 @@
 }
 
 @media (max-width : 640px) {
-	#final-cta h2 {
+	#final-cta h1 {
 		max-width : 240px;
 	}
 

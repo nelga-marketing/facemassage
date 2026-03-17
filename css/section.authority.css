@@ -17,7 +17,7 @@
 		justify-content : flex-start;
 	}
 
-	#authority .authority-copy h2 {
+	#authority .authority-copy h1 {
 		max-width : 470px;
 	}
 
@@ -53,7 +53,7 @@
 	}
 
 @media (max-width : 980px) {
-	#authority h2 {
+	#authority h1 {
 		max-width : 100%;
 	}
 

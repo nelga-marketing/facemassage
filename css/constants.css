@@ -38,6 +38,7 @@
 	--color-shadow-soft            : rgba(47, 34, 27, 0.03);
 	--color-shadow-soft-md         : rgba(47, 34, 27, 0.06);
 	--color-shadow-inset-light     : rgba(255, 255, 255, 0.35);
+	--color-gbnd                   : #8f6d3a;
 }
 
 /* ------------------------------ spacing-and-radius ------------------------------ */
@@ -53,7 +54,7 @@
 /* ------------------------------ sizing ------------------------------ */
 
 :root {
-	--heading-color                : #6f6968;
+	--heading-color                : #514644;
 	--heading-size                 : 48px;
 	--heading-line                 : 0.98;
 	--heading-letter               : 0.02em;
