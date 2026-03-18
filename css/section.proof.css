@@ -2,29 +2,17 @@
 	background : var(--color-brown-main);
 	overflow   : hidden;
 }
+	#proof h1 {
+		margin : 0 auto;
+	}
 
 	#proof .top {
 		display               : grid;
-		grid-template-columns : 240px minmax(0, 1fr) 240px;
+		grid-template-columns : 300px minmax(0, 1fr) 300px;
 		column-gap            : 36px;
 		align-items           : start;
 		margin-bottom         : 38px;
 		position              : relative;
-	}
-
-	#proof .top::after {
-		content             : "";
-		position            : absolute;
-		top                 : 120px;
-		right               : 0;
-		width               : 240px;
-		height              : 150px;
-		background-image    : url("../img/image_07.png");
-		background-repeat   : no-repeat;
-		background-size     : cover;
-		background-position : center;
-		z-index             : 4;
-		pointer-events      : none;
 	}
 
 	#proof .top-image-left {
@@ -34,11 +22,8 @@
 
 	#proof .top-image-right {
 		height              : 150px;
-		background-image    : url("../img/image_09.png");
+		background-image    : url("../img/image_07.png");
 		background-position : center;
-		justify-self        : end;
-		position            : relative;
-		overflow            : hidden;
 	}
 
 	#proof .intro {

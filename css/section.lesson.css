@@ -1,6 +1,10 @@
 #lesson {
 	background : var(--color-page-main);
 }
+	#lesson h4 {
+		max-width : 600px;
+		margin    : 0 auto;
+	}
 
 	#lesson .lesson-head {
 		display               : grid;

@@ -1,6 +1,9 @@
 .image {
 	border-radius : 40px 0 40px 0;
 }
+	.image > * {
+		overflow: hidden;
+	}
 
 @media (max-width : 640px) {
 	.image {

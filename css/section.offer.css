@@ -14,9 +14,8 @@
 	}
 
 	#offer .offer-visual {
-		min-height    : 376px;
-		border-radius : 10px;
-		background-image : url("../img/image_04.png");
+		min-height          : 376px;
+		background-image    : url("../img/image_04.png");
 		background-position : center 22%;
 	}
 
