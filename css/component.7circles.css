@@ -1,0 +1,114 @@
+.circles-7 {
+	--circle-size     : 220px;
+	--orbit-distance  : 178px;
+	--constellation-w : 620px;
+	--constellation-h : 620px;
+
+	/* position     : relative; */
+	width        : min(100%, var(--constellation-w));
+	height       : var(--constellation-h);
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+.circles-7 .circle {
+	position : absolute;
+	left     : 50%;
+	top      : 50%;
+}
+
+.circles-7 .circle-center {
+	transform : translate(-50%, -50%);
+	z-index   : 3;
+}
+
+.circles-7 .circle-1 {
+	transform : translate(-50%, calc(-50% - var(--orbit-distance)));
+	z-index   : 2;
+}
+
+.circles-7 .circle-2 {
+	transform : translate(
+		calc(-50% + (var(--orbit-distance) * 0.866)),
+		calc(-50% - (var(--orbit-distance) * 0.5))
+	);
+	z-index : 2;
+}
+
+.circles-7 .circle-3 {
+	transform : translate(
+		calc(-50% + (var(--orbit-distance) * 0.866)),
+		calc(-50% + (var(--orbit-distance) * 0.5))
+	);
+	z-index : 2;
+}
+
+.circles-7 .circle-4 {
+	transform : translate(-50%, calc(-50% + var(--orbit-distance)));
+	z-index   : 2;
+}
+
+.circles-7 .circle-5 {
+	transform : translate(
+		calc(-50% - (var(--orbit-distance) * 0.866)),
+		calc(-50% + (var(--orbit-distance) * 0.5))
+	);
+	z-index : 2;
+}
+
+.circles-7 .circle-6 {
+	transform : translate(
+		calc(-50% - (var(--orbit-distance) * 0.866)),
+		calc(-50% - (var(--orbit-distance) * 0.5))
+	);
+	z-index : 2;
+}
+
+@media (max-width : 1200px) {
+	.circles-7 {
+		--circle-size     : 196px;
+		--orbit-distance  : 154px;
+		--constellation-w : 540px;
+		--constellation-h : 540px;
+	}
+}
+
+@media (max-width : 980px) {
+	.circles-7 {
+		--circle-size     : 180px;
+		--orbit-distance  : 138px;
+		--constellation-w : 480px;
+		--constellation-h : 480px;
+	}
+}
+
+@media (max-width : 640px) {
+	.circles-7 {
+		display               : grid;
+		grid-template-columns : 1fr 1fr;
+		gap                   : 14px;
+		width                 : 100%;
+		height                : auto;
+		max-width             : 420px;
+	}
+
+	.circles-7 .circle {
+		position     : relative;
+		left         : auto;
+		top          : auto;
+		transform    : none;
+		width        : 100%;
+		height       : auto;
+		aspect-ratio : 1 / 1;
+	}
+
+	.circles-7 .circle-center {
+		grid-column   : 1 / -1;
+		width         : min(100%, 220px);
+		justify-self  : center;
+	}
+
+	.circles-7 .circle-orbit {
+		width : 100%;
+	}
+}

@@ -1,0 +1,135 @@
+.circle {
+	position        : relative;
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	width           : var(--circle-size, 220px);
+	height          : var(--circle-size, 220px);
+	border-radius   : 50%;
+	overflow        : hidden;
+	text-align      : center;
+	text-decoration : none;
+	isolation       : isolate;
+	flex-shrink     : 0;
+}
+
+.circle::before {
+	content        : "";
+	position       : absolute;
+	inset          : 0;
+	border-radius  : 50%;
+	pointer-events : none;
+}
+
+.circle-center {
+	background : var(--color-gbnd);
+	color      : #ffffff;
+	box-shadow : 0 16px 40px var(--color-shadow-soft-md);
+	border     : 1px solid var(--color-border-light-on-dark);
+}
+
+.circle-center::before {
+	box-shadow : inset 0 1px 0 var(--color-shadow-inset-light);
+}
+
+.circle-course {
+	padding : 28px;
+}
+
+.circle-label {
+	position       : relative;
+	z-index        : 2;
+	display        : block;
+	max-width      : 10ch;
+	font-family    : var(--font-heading);
+	font-weight    : var(--font-weight-heading);
+	font-size      : 28px;
+	line-height    : 1.04;
+	letter-spacing : 0.01em;
+	color          : inherit;
+}
+
+.circle-orbit {
+	background-image    : var(--circle-image);
+	background-size     : cover;
+	background-position : center;
+	background-repeat   : no-repeat;
+	box-shadow          : 0 12px 28px var(--color-shadow-soft-md);
+	border              : 1px solid var(--color-border-light);
+}
+
+.circle-orbit::before {
+	background : linear-gradient(
+		180deg,
+		rgba(47, 34, 27, 0.08) 0%,
+		rgba(47, 34, 27, 0.18) 45%,
+		rgba(47, 34, 27, 0.52) 100%
+	);
+}
+
+.circle-overlay {
+	position        : relative;
+	z-index         : 2;
+	display         : flex;
+	flex-direction  : column;
+	align-items     : center;
+	justify-content : flex-end;
+	gap             : 6px;
+	width           : 100%;
+	height          : 100%;
+	padding         : 26px 20px 24px;
+	color           : #ffffff;
+}
+
+.circle-kicker {
+	display        : block;
+	font-family    : var(--font-ui);
+	font-size      : 12px;
+	font-weight    : 600;
+	line-height    : 1.2;
+	letter-spacing : var(--letter-spacing-ui);
+	text-transform : uppercase;
+}
+
+.circle-text {
+	display     : block;
+	max-width   : 15ch;
+	font-family : var(--font-body);
+	font-size   : var(--font-size-body-xs);
+	line-height : 1.3;
+}
+
+.circle-orbit,
+.circle-center {
+	transition : transform 180ms ease, box-shadow 180ms ease;
+}
+
+.circle-orbit:hover,
+.circle-center:hover {
+	box-shadow : 0 18px 38px var(--color-shadow-soft-md);
+}
+
+@media (max-width : 980px) {
+	.circle-label {
+		font-size : 24px;
+	}
+
+	.circle-text {
+		font-size : 14px;
+	}
+}
+
+@media (max-width : 640px) {
+	.circle-label {
+		font-size : 22px;
+		max-width : 9ch;
+	}
+
+	.circle-course {
+		padding : 22px;
+	}
+
+	.circle-overlay {
+		padding : 22px 16px 20px;
+	}
+}

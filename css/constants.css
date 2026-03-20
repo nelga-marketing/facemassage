@@ -1,6 +1,30 @@
+@font-face {
+	font-family : "Chop Suey";
+	src         : local("Chop Suey"), local("ChopsUey"), url("../fonts/ChopsUey.ttf") format("truetype");
+	font-style  : normal;
+	font-weight : 400;
+}
+
+@font-face {
+	font-family : "Wonton";
+	src         : local("Wonton"), url("../fonts/Wonton.ttf") format("truetype");
+	font-style  : normal;
+	font-weight : 400;
+}
+
+@font-face {
+	font-family : "Christmas Merryland";
+	src         : local("Christmas Merryland"), url("../fonts/ChristmasMerryland.ttf") format("truetype");
+	font-style  : normal;
+	font-weight : 400;
+}
+
 /* ------------------------------ typography ------------------------------ */
 
 :root {
+	--font-chopsuey         : "Chop Suey", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	--font-christmas        : "Christmas Merryland", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	--font-wonton           : "Wonton", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 	--font-heading          : "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 	--font-body             : "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 	--font-ui               : "Segoe UI", "Helvetica Neue", Arial, sans-serif;
