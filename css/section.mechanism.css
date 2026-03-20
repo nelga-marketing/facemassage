@@ -16,7 +16,19 @@
 	}
 
 	#mechanism .mechanism-copy h1 {
-		max-width : 470px;
+		max-width : 560px;
+		margin    : 0 0 18px;
+	}
+
+	#mechanism .gallery {
+		margin-top : 0;
+		transform  : translateY(1.2cm);
+	}
+
+	#mechanism .mechanism-copy h4,
+	#mechanism .mechanism-copy h5,
+	#mechanism .cta-row {
+		transform : translateY(1.2cm);
 	}
 
 	#mechanism .mechanism-copy h5 {
@@ -58,6 +70,17 @@
 	#mechanism .mechanism-copy {
 		max-width : 100%;
 		padding   : 0;
+	}
+
+	#mechanism .gallery {
+		margin-top : 0;
+		transform  : none;
+	}
+
+	#mechanism .mechanism-copy h4,
+	#mechanism .mechanism-copy h5,
+	#mechanism .cta-row {
+		transform : none;
 	}
 
 	#mechanism .mechanism-copy h5 {
