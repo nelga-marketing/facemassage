@@ -22,10 +22,11 @@
 	}
 
 	#problem .image-placeholder {
-		width               : 100%;
-		height              : 100%;
+		width               : 75%;
+		height              : 75%;
 		min-height          : 62vh;
-		background-image    : url("../img/image_02.png");
+		margin-top          : 24px;
+		background-image    : url("../img/before_1.jpg");
 		background-position : left center;
 		background-color    : var(--color-page-main);
 	}
@@ -99,6 +100,7 @@
 	#problem .image-placeholder {
 		height              : 520px;
 		min-height          : 520px;
+		margin-top          : 0;
 		background-position : center top;
 	}
 

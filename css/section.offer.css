@@ -29,6 +29,20 @@
 		margin : 0 0 12px;
 	}
 
+	#offer .offer-block-top h4 {
+		max-width      : 620px;
+		font-family    : var(--font-ui);
+		font-size      : 14px;
+		line-height    : 1.2;
+		letter-spacing : 0.14em;
+		text-transform : uppercase;
+	}
+
+	#offer .offer-block-top h1 {
+		margin    : 0 0 14px;
+		max-width : 620px;
+	}
+
 	#offer .offer-block-top h5 {
 		margin    : 0;
 		max-width : 620px;
@@ -51,6 +65,11 @@
 		max-width : 620px;
 	}
 
+	#offer .offer-copy h3 {
+		margin    : 0 0 12px;
+		max-width : 620px;
+	}
+
 	#offer .offer-list {
 		margin     : 0;
 		padding    : 0;
@@ -58,16 +77,11 @@
 	}
 
 	#offer .offer-list li {
-		position     : relative;
-		margin       : 0 0 16px;
-		padding-left : 22px;
+		margin : 0 0 10px;
 	}
 
 	#offer .offer-list li::before {
-		content  : "\2022";
-		position : absolute;
-		left     : 0;
-		top      : 0;
+		content : none;
 	}
 
 	#offer .offer-list li h5 {

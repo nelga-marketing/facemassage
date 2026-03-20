@@ -25,6 +25,15 @@
 		margin : 0 0 18px;
 	}
 
+	#hook .content h1 {
+		max-width : 620px;
+		white-space : nowrap;
+	}
+
+	#hook .content h1 br {
+		display : block;
+	}
+
 	#hook .copy h5 {
 		max-width : 480px;
 	}
@@ -84,6 +93,7 @@
 	#hook .content h1 {
 		max-width : 100%;
 		margin    : 0 0 24px;
+		white-space : normal;
 	}
 
 	#hook .copy,
@@ -123,6 +133,7 @@
 
 	#hook .content h1 {
 		margin : 0 0 20px;
+		white-space : normal;
 	}
 
 	#hook .content h4 {

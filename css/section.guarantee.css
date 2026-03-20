@@ -11,6 +11,10 @@
 		max-width : 100%;
 	}
 
+	#guarantee .guarantee-head h4 {
+		margin : 0 0 12px;
+	}
+
 	#guarantee .guarantee-head h5 {
 		margin    : 0 auto;
 		max-width : 830px;

@@ -21,6 +21,11 @@
 		max-width : 430px;
 	}
 
+	#final-cta .final-cta-copy h4 {
+		margin    : 0 0 16px;
+		max-width : 430px;
+	}
+
 	#final-cta .final-cta-copy h5 {
 		margin    : 0 0 36px;
 		max-width : 520px;
@@ -55,6 +60,11 @@
 		margin    : 0 0 24px;
 	}
 
+	#final-cta .final-cta-copy h4 {
+		margin    : 0 0 14px;
+		max-width : 360px;
+	}
+
 	#final-cta .final-cta-action {
 		margin : 0 0 34px;
 	}
@@ -77,6 +87,10 @@
 	#final-cta .final-cta-copy h5 {
 		max-width : 250px;
 		margin    : 0 0 22px;
+	}
+
+	#final-cta .final-cta-copy h4 {
+		max-width : 250px;
 	}
 
 	#final-cta .final-cta-action {
