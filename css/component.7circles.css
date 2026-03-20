@@ -4,7 +4,7 @@
 	--constellation-w : 620px;
 	--constellation-h : 620px;
 
-	position     : relative;
+	/* position     : relative; */
 	width        : min(100%, var(--constellation-w));
 	height       : var(--constellation-h);
 	margin-left  : auto;
