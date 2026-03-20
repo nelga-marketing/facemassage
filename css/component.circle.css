@@ -1,0 +1,78 @@
+.circle {
+	position        : relative;
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	width           : var(--circle-size, 220px);
+	height          : var(--circle-size, 220px);
+	border-radius   : 50%;
+	overflow        : hidden;
+	text-align      : center;
+	text-decoration : none;
+	isolation       : isolate;
+	flex-shrink     : 0;
+}
+
+.circle::before {
+	content        : "";
+	position       : absolute;
+	inset          : 0;
+	border-radius  : 50%;
+	pointer-events : none;
+}
+
+.circle-center {
+	box-shadow : 0 18px 42px rgba(88, 63, 40, 0.18);
+}
+
+.circle-premium {
+	border     : 1px solid rgba(255, 248, 240, 0.62);
+	box-shadow : 0 18px 42px rgba(88, 63, 40, 0.18);
+}
+
+.circle-premium::before {
+	background : linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.42) 0%,
+		rgba(255, 255, 255, 0.14) 38%,
+		rgba(74, 49, 31, 0.12) 100%
+	);
+}
+
+.circle-premium-center {
+	background : radial-gradient(circle at 32% 28%, #fff9ef 0%, #ebd8b6 42%, #c49663 100%);
+}
+
+.circle-premium-1 {
+	background : linear-gradient(160deg, #f7ead3 0%, #dfc098 100%);
+}
+
+.circle-premium-2 {
+	background : linear-gradient(160deg, #ead8cf 0%, #cd9a7f 100%);
+}
+
+.circle-premium-3 {
+	background : linear-gradient(160deg, #d2b18f 0%, #926443 100%);
+}
+
+.circle-premium-4 {
+	background : linear-gradient(160deg, #f4ede4 0%, #d7b9a0 100%);
+}
+
+.circle-premium-5 {
+	background : linear-gradient(160deg, #d9d3c2 0%, #a08c63 100%);
+}
+
+.circle-premium-6 {
+	background : linear-gradient(160deg, #c8ab94 0%, #785340 100%);
+}
+
+.circle-premium,
+.circle-center {
+	transition : transform 180ms ease, box-shadow 180ms ease;
+}
+
+.circle-premium:hover,
+.circle-center:hover {
+	box-shadow : 0 20px 42px rgba(88, 63, 40, 0.22);
+}

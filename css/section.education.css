@@ -3,92 +3,41 @@
 	overflow   : hidden;
 }
 
-	#education .education-shell {
-		display               : grid;
-		grid-template-columns : 420px minmax(0, 1fr);
-		column-gap            : 32px;
-		align-items           : start;
-	}
+#education .education-shell {
+	display         : grid;
+	grid-template-columns : 1fr;
+	justify-items   : center;
+}
 
-	#education .education-left {
-		padding-top : 6px;
-		min-width   : 0;
-	}
+#education .education-visual {
+	display        : flex;
+	justify-content : center;
+	align-items    : center;
+	width          : 100%;
+	min-width      : 0;
+}
 
-	#education .education-left h1 {
-		max-width : 420px;
-	}
+#education .education-flower {
+	--circle-size     : 210px;
+	--orbit-distance  : 164px;
+	--constellation-w : 600px;
+	--constellation-h : 600px;
+}
 
-	#education .education-left h1 b {
-		color          : inherit;
-		font-size      : inherit;
-		font-weight    : inherit;
-		line-height    : inherit;
-		letter-spacing : inherit;
-	}
-
-	#education .education-photo {
-		width            : 100%;
-		max-width        : 420px;
-		height           : 240px;
-		margin-bottom    : 14px;
-		background-image : url("../img/image_17.png");
-	}
-
-	#education .education-right {
-		padding-top            : 70px;
-		min-width              : 0;
-		display                : grid;
-		grid-template-columns  : minmax(0, 1fr) auto;
-		column-gap             : 14px;
-		align-items            : start;
-	}
-
-	#education .education-right .icon-list {
-		grid-column : 1 / -1;
-	}
-
-	#education .education-price-button {
-		grid-column  : 2;
-		margin-top   : 24px;
-		margin-left  : 0;
-		justify-self : end;
-	}
-
-	#education .education-price-note {
-		display      : block;
-		grid-column  : 2;
-		margin-top   : 8px;
-		margin-left  : 0;
-		max-width    : none;
-		width        : 100%;
-		text-align   : center;
-		justify-self : end;
-		align-self   : start;
-	}
+#education .education-flower .circle-premium-center {
+	box-shadow : 0 22px 52px rgba(110, 80, 42, 0.24);
+}
 
 @media (max-width : 980px) {
-	#education h1 {
-		max-width : 100%;
-	}
-
 	#education {
-		padding : 28px 0 32px;
+		padding : 32px 0 36px;
 	}
 
-	#education .education-shell {
-		grid-template-columns : 1fr;
-		row-gap               : 22px;
-	}
-
-	#education .education-left,
-	#education .education-right {
-		padding-top : 0;
-	}
-
-	#education .education-photo {
-		max-width     : 100%;
-		height        : 240px;
+	#education .education-flower {
+		--circle-size     : 182px;
+		--orbit-distance  : 142px;
+		--constellation-w : 500px;
+		--constellation-h : 500px;
 	}
 }
 
@@ -97,7 +46,8 @@
 		padding : 24px 0 28px;
 	}
 
-	#education .education-photo {
-		height : 220px;
+	#education .education-flower {
+		--circle-size : 100%;
+		max-width     : 360px;
 	}
 }
