@@ -46,24 +46,26 @@
 	}
 
 	#lesson .lesson-notes {
-		display : grid;
-		row-gap : 8px;
+		display : block;
 		grid-column : 2;
 		align-self  : start;
 		justify-self: end;
 		width       : 100%;
 		max-width   : 480px;
-		padding-left  : 76px;
-		margin-top    : -113px;
+		padding-left  : 0;
+		margin-top    : -162px;
 		margin-bottom : 0;
 		text-align    : left;
 	}
 
 	#lesson .lesson-notes small {
 		display      : block;
-		font-size    : 14px;
-		line-height  : 1.45;
-		letter-spacing : 0.01em;
+		max-width    : none;
+		font-size    : 28px;
+		line-height  : 1.08;
+		letter-spacing : -0.015em;
+		color        : rgba(75, 46, 32, 0.86);
+		text-wrap    : balance;
 	}
 
 	#lesson .lesson-media {
@@ -73,7 +75,7 @@
 		min-height          : 480px;
 		align-self          : start;
 		justify-self        : end;
-		margin-top          : -226px;
+		margin-top          : -120px;
 		background-image    : url("../img/skin.png");
 		background-repeat   : no-repeat;
 		background-position : center right;
@@ -110,6 +112,19 @@
 		max-width     : 100%;
 		margin-bottom : 0;
 	}
+
+	#lesson .lesson-notes {
+		margin-top : 0;
+	}
+
+	#lesson .lesson-notes small {
+		font-size   : 22px;
+		line-height : 1.12;
+	}
+
+	#lesson .lesson-media {
+		margin-top : 0;
+	}
 }
 
 @media (max-width : 640px) {
@@ -132,7 +147,12 @@
 	}
 
 	#lesson .lesson-notes {
-		row-gap : 7px;
+		margin-top : 0;
+	}
+
+	#lesson .lesson-notes small {
+		font-size   : 18px;
+		line-height : 1.16;
 	}
 
 	#lesson .lesson-media {
