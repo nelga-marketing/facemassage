@@ -5,9 +5,9 @@
 	#authority .authority-split {
 		display               : grid;
 		grid-template-columns : minmax(0, 0.9fr) minmax(0, 1.1fr);
-		height                : 680px;
+		min-height            : 680px;
 		align-items           : stretch;
-		overflow              : hidden;
+		overflow              : visible;
 	}
 
 	#authority .authority-copy {
@@ -18,16 +18,16 @@
 	}
 
 	#authority .authority-copy h1 {
-		max-width : 470px;
+		max-width : 520px;
 	}
 
 	#authority .authority-copy h5 {
-		margin    : 0 0 28px;
+		margin    : 0 0 22px;
 		max-width : 520px;
 	}
 
 	#authority .authority-copy h5:last-of-type {
-		margin-bottom : 34px;
+		margin-bottom : 30px;
 	}
 
 	#authority .cta-row {
@@ -40,6 +40,7 @@
 		align-items     : stretch;
 		justify-content : stretch;
 		overflow        : hidden;
+		border-radius   : 40px 0 40px 0;
 		height          : 100%;
 		min-height      : 0;
 	}
@@ -59,7 +60,7 @@
 
 	#authority .authority-split {
 		grid-template-columns : 1fr;
-		height                : auto;
+		min-height            : 0;
 	}
 
 	#authority .authority-copy {
@@ -68,16 +69,17 @@
 
 	#authority .authority-copy h5 {
 		max-width : 100%;
-		margin    : 0 0 20px;
+		margin    : 0 0 18px;
 	}
 
 	#authority .authority-copy h5:last-of-type {
-		margin-bottom : 26px;
+		margin-bottom : 24px;
 	}
 
 	#authority .authority-media {
 		height     : 420px;
 		min-height : 420px;
+		border-radius: 28px 0 28px 0;
 	}
 }
 
@@ -87,11 +89,11 @@
 	}
 
 	#authority .authority-copy h5 {
-		margin : 0 0 16px;
+		margin : 0 0 14px;
 	}
 
 	#authority .authority-copy h5:last-of-type {
-		margin-bottom : 20px;
+		margin-bottom : 18px;
 	}
 
 	#authority .authority-media {

@@ -77,17 +77,18 @@
 	align-items     : center;
 	justify-content : center;
 	gap             : 10px;
-	padding         : 26px;
+	padding         : 36px 26px 24px;
 }
 
 .circle-copy-center {
-	gap : 12px;
+	gap     : 0;
+	padding : 26px;
 }
 
 .circle-title {
 	display        : block;
 	font-family    : var(--font-chopsuey);
-	font-size      : 42px;
+	font-size      : 31px;
 	line-height    : 0.9;
 	letter-spacing : 0.01em;
 	color          : #111111;
@@ -116,7 +117,7 @@
 	display        : block;
 	max-width      : 13ch;
 	font-family    : var(--font-body);
-	font-size      : 12px;
+	font-size      : 13px;
 	line-height    : 1.25;
 	letter-spacing : 0.01em;
 	text-transform : lowercase;
@@ -143,7 +144,7 @@
 
 @media (max-width : 980px) {
 	.circle-title {
-		font-size : 34px;
+		font-size : 26px;
 	}
 
 	.circle-title-center {
@@ -155,18 +156,18 @@
 	}
 
 	.circle-note {
-		font-size : 11px;
+		font-size : 12px;
 	}
 }
 
 @media (max-width : 640px) {
 	.circle-copy {
 		gap     : 8px;
-		padding : 18px;
+		padding : 26px 18px 16px;
 	}
 
 	.circle-title {
-		font-size : 28px;
+		font-size : 21px;
 	}
 
 	.circle-title-center {
@@ -178,6 +179,6 @@
 	}
 
 	.circle-note {
-		font-size : 10px;
+		font-size : 11px;
 	}
 }
