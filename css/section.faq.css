@@ -11,7 +11,7 @@
 
 	#faq .faq-top {
 		display               : grid;
-		grid-template-columns : minmax(0, 1fr) 180px;
+		grid-template-columns : minmax(0, 1fr) minmax(320px, 420px);
 		column-gap            : 22px;
 		align-items           : start;
 		margin                : 0 auto 14px;
@@ -45,16 +45,18 @@
 	}
 
 	#faq .faq-side-image {
-		height        : 178px;
-		width         : 178px;
+		height        : 220px;
+		width         : 100%;
 		border-radius : 24px;
 		justify-self  : end;
 	}
 
 	#faq .faq-side-image-left {
-		background-image : url("../img/image_08.png");
-		height           : 178px;
-		margin-top       : 0;
+		background-image    : url("../img/FAQ.png");
+		background-size     : cover;
+		background-position : center top;
+		height              : 220px;
+		margin-top          : 0;
 	}
 
 	#faq .faq-center {
@@ -173,13 +175,13 @@
 	}
 
 	#faq .faq-side-image {
-		height : 164px;
-		width  : 164px;
+		height : 220px;
+		width  : 100%;
 	}
 
 	#faq .faq-side-image-left {
-		height    : 164px;
-		max-width : 164px;
+		height    : 220px;
+		max-width : 100%;
 		justify-self : start;
 	}
 
@@ -213,13 +215,13 @@
 
 @media (max-width : 640px) {
 	#faq .faq-side-image {
-		height : 146px;
-		width  : 146px;
+		height : 180px;
+		width  : 100%;
 	}
 
 	#faq .faq-side-image-left {
-		height    : 146px;
-		max-width : 146px;
+		height    : 180px;
+		max-width : 100%;
 	}
 
 	#faq .faq-center {

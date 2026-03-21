@@ -115,6 +115,7 @@
 		min-height    : 52px;
 		font-size     : 16px;
 		border-radius : 999px;
+		align-self    : center;
 	}
 
 	#upgrade .offer-again-price {
@@ -123,23 +124,21 @@
 		gap         : 10px;
 	}
 
+	#upgrade .offer-again-price .text-button-large,
+	#upgrade .offer-again-price .old-price {
+		font-size   : 28px;
+		line-height : 1;
+	}
+
+	#upgrade .offer-again-price .text-button-large {
+		color : #4f7d45;
+	}
+
 	#upgrade .offer-again-price .old-price {
 		opacity            : 0.72;
 		text-decoration    : line-through;
 		text-decoration-thickness : 1px;
-		font-size          : 14px;
-		line-height        : 1;
 		margin-right       : 8px;
-	}
-
-	#upgrade .offer-card-primary .offer-again-price .text-button-large {
-		font-size   : 26px;
-		line-height : 1;
-	}
-
-	#upgrade .offer-card:not(.offer-card-primary) .offer-again-price .text-button-large {
-		font-size   : 22px;
-		line-height : 1;
 	}
 
 	#upgrade .offer-again-price-block h4,
@@ -159,10 +158,6 @@
 		background   : #fbf7f3;
 	}
 
-	#upgrade .offer-card-primary .text-button-large {
-		font-size : 30px;
-	}
-
 	#upgrade .offer-badge {
 		display         : inline-flex;
 		align-self      : flex-start;
@@ -170,8 +165,27 @@
 		padding         : 6px 12px;
 		margin-bottom   : 16px;
 		border-radius   : 999px;
-		border          : 1px solid rgba(47, 34, 27, 0.18);
-		background      : rgba(247, 244, 241, 0.82);
+		border          : 1px solid transparent;
+		min-height      : 34px;
+		align-items     : center;
+		justify-content : center;
+		font-weight     : 600;
+		letter-spacing  : 0.08em;
+		text-transform  : uppercase;
+	}
+
+	#upgrade .offer-badge-start {
+		border-color : rgba(97, 122, 84, 0.24);
+		background   : linear-gradient(180deg, #edf7e8 0%, #dcebcf 100%);
+		color        : #48603d;
+		box-shadow   : 0 10px 22px rgba(91, 117, 76, 0.12);
+	}
+
+	#upgrade .offer-badge-premium {
+		border-color : rgba(120, 82, 21, 0.26);
+		background   : linear-gradient(180deg, #f4e3bb 0%, #dcb66a 100%);
+		color        : #614014;
+		box-shadow   : 0 12px 24px rgba(115, 82, 28, 0.14);
 	}
 
 	#upgrade .offer-again-foot {
@@ -209,9 +223,6 @@
 		gap                   : 18px;
 	}
 
-	#upgrade .offer-card-primary .text-button-large {
-		font-size : 30px;
-	}
 }
 
 @media (max-width : 640px) {

@@ -11,7 +11,14 @@
 	color           : var(--color-bg-light);
 	background      : var(--color-brown-main);
 	text-decoration : none;
+	font-size       : 22px;
+	line-height     : 1.1;
+	font-weight     : 400;
 }
+
+	.button b {
+		font-weight : 700;
+	}
 
 	.button.button-primary {
 		background : var(--color-brown-main);
@@ -33,5 +40,6 @@
 	.button {
 		min-height : 54px;
 		padding    : 0 22px;
+		font-size  : 18px;
 	}
 }
