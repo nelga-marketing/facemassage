@@ -3,6 +3,7 @@
 	min-height            : 278px;
 	padding               : 18px 20px 20px;
 	background            : var(--color-bg-light);
+	border-radius         : 40px 0 40px 0;
 	display               : flex;
 	flex-direction        : column;
 	align-items           : center;
@@ -41,8 +42,8 @@
 		margin        : 0 0 14px;
 		max-width     : 260px;
 		padding       : 28px;
-		border-radius : var(--radius-2xl);
-		background    : var(--color-bg-light);
+		border-radius : 40px 0 40px 0;
+		background    : linear-gradient(180deg, rgba(255, 251, 246, 0.98) 0%, rgba(239, 223, 201, 0.92) 100%);
 		border        : 1px solid var(--color-border-soft);
 	}
 
@@ -67,6 +68,7 @@
 	.card {
 		min-height : 244px;
 		padding    : 18px 18px 20px;
+		border-radius : 28px 0 28px 0;
 	}
 
 	.card .media {
@@ -81,5 +83,9 @@
 	}
 
 	.card .stars {
+	}
+
+	.card .quote {
+		border-radius : 28px 0 28px 0;
 	}
 }

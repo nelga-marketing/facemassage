@@ -21,7 +21,7 @@ h1 {
 	font-size      : var(--heading-size);
 	line-height    : var(--heading-line);
 	letter-spacing : var(--heading-letter);
-	font-weight    : var(--font-weight-heading);
+	font-weight    : 300;
 	text-transform : uppercase;
 	text-align     : var(--heading-align);
 
@@ -29,7 +29,8 @@ h1 {
 }
 
 	h1::first-line {
-		color : rgba(75, 46, 32, 1);
+		color       : rgba(96, 58, 40, 0.94);
+		font-weight : var(--font-weight-heading);
 	}
 
 	h1::before {
@@ -73,12 +74,13 @@ h3 {
 	margin         : 0 0 28px;
 	max-width      : 700px;
 	font-family    : var(--font-heading);
-	font-size      : clamp(25px, 3.2vw, 45px);
-	line-height    : 0.98;
-	letter-spacing : -0.02em;
-	font-weight    : 400 !important;
-	text-transform : uppercase;
-	color          : var(--color-gbnd);
+	font-size      : clamp(22px, 2.5vw, 38px);
+	line-height    : 1.02;
+	letter-spacing : -0.015em;
+	font-weight    : 500 !important;
+	text-transform : none;
+	text-wrap      : balance;
+	color          : rgba(75, 46, 32, 0.88);
 }
 
 	h3 b {
@@ -95,11 +97,13 @@ h3 {
 h4 {
 	margin         : 0 0 10px;
 	font-family    : var(--font-ui);
-	font-size      : 14px;
-	line-height    : 1.2;
-	letter-spacing : 0.2em;
+	font-size      : clamp(16px, 1.2vw, 20px);
+	line-height    : 1.06;
+	letter-spacing : 0.09em;
+	font-style     : italic;
+	font-weight    : 400;
 	text-transform : uppercase;
-	color          : var(--color-brown-main);
+	color          : rgba(75, 46, 32, 0.9);
 }
 
 	h4 b {
@@ -110,12 +114,13 @@ h4 {
 /*************************************************************************/
 
 h5 {
-	margin      : 0 0 24px;
-	font-family : var(--font-body);
-	font-size   : 16px;
-	line-height : 1.6;
-	font-weight : 400;
-	color       : var(--color-brown-main);
+	margin         : 0 0 24px;
+	font-family    : var(--font-body);
+	font-size      : clamp(17px, 1.18vw, 20px);
+	line-height    : 1.5;
+	letter-spacing : 0.005em;
+	font-weight    : 300;
+	color          : #000;
 }
 
 	h5 b {
@@ -173,21 +178,23 @@ small {
 	}
 
 	h3 {
-		font-size   : 22px;
-		line-height : 1.05;
+		font-size   : 20px;
+		line-height : 1.06;
 		margin      : 0 0 20px;
 	}
 
 	h4 {
-		font-size      : 11px;
+		font-size      : 13px;
+		line-height    : 1.08;
 		letter-spacing : 0.16em;
 		margin-bottom  : 8px;
 	}
 
 	h5 {
-		font-size   : 16px;
-		line-height : 1.52;
-		margin      : 0 0 16px;
+		font-size      : 15px;
+		line-height    : 1.48;
+		letter-spacing : 0.004em;
+		margin         : 0 0 16px;
 	}
 
 	body {

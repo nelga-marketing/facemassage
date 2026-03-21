@@ -17,6 +17,13 @@
 	#proof h1 {
 		margin : 0 auto;
 	}
+		#proof h1::first-line {
+			color : #d4ae9ce0;
+		}
+
+	#proof h3 {
+		color: #d4ae9ce0;
+	}
 
 	#proof .top {
 		grid-column           : 1 / -1;
@@ -24,7 +31,6 @@
 		grid-template-columns : 300px minmax(0, 1fr) 300px;
 		column-gap            : 36px;
 		align-items           : start;
-		margin-bottom         : 38px;
 		position              : relative;
 	}
 
@@ -46,18 +52,22 @@
 	}
 
 	#proof .proof-copy {
-		grid-column : 2 / -1;
-		max-width : 760px;
-		margin    : -208px 0 28px;
+		grid-column   : 2 / -1;
+		max-width     : 760px;
+		margin        : -300px 0 28px;
 		justify-self : start;
-		display   : grid;
-		row-gap   : 16px;
+		display       : grid;
+		row-gap       : 16px;
 	}
 
 	#proof .proof-copy h5 {
 		margin      : 0;
 		max-width   : 920px;
 		line-height : 1.6;
+	}
+
+	#proof .proof-copy h5 b {
+		color : #ffffff;
 	}
 
 	#proof .proof-subtitle {
@@ -74,11 +84,6 @@
 
 	#proof .carousel :is(small, .stars) {
 		color : var(--color-brown-main);
-	}
-
-	#proof .carousel .card:nth-of-type(n+2) .media .image {
-		background-size     : 125% auto;
-		background-position : center top;
 	}
 
 	#proof .arrow {
