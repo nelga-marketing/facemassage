@@ -2,39 +2,26 @@
 	background : var(--color-page-main);
 }
 
-	#lesson .lesson-head {
-		display               : grid;
-		grid-template-columns : 1fr auto;
-		align-items           : start;
-		column-gap            : 24px;
-		margin-bottom         : 30px;
-	}
-
-	#lesson .lesson-head h1 {
-		max-width : 420px;
-		margin    : 0;
-	}
-
-	#lesson .lesson-head h4 {
-		margin     : 0;
-		padding-top: 8px;
-	}
-
 	#lesson .lesson-layout {
 		display               : grid;
-		grid-template-columns : minmax(360px, 1fr) minmax(340px, 0.85fr);
+		grid-template-columns : minmax(420px, 1fr) minmax(360px, 0.95fr);
 		column-gap            : 72px;
 		align-items           : start;
 	}
 
-	#lesson .lesson-text {
-		display : contents;
+	#lesson .lesson-copy {
+		display     : grid;
+		row-gap     : 34px;
+		align-self  : start;
+	}
+
+	#lesson .lesson-copy h1 {
+		max-width : 560px;
 	}
 
 	#lesson .lesson-body {
 		display  : grid;
 		row-gap  : 16px;
-		grid-column : 1;
 		align-self  : start;
 		max-width   : 620px;
 		margin      : 0 auto;
@@ -45,15 +32,25 @@
 		margin : 0;
 	}
 
+	#lesson .lesson-figure {
+		display        : grid;
+		align-content  : start;
+		row-gap        : 22px;
+		width          : 100%;
+		max-width      : 520px;
+		justify-self   : start;
+		align-self     : start;
+	}
+
+	#lesson .lesson-figure h4 {
+		margin     : 0;
+		padding-top: 8px;
+	}
+
 	#lesson .lesson-notes {
 		display : block;
-		grid-column : 2;
-		align-self  : start;
-		justify-self: end;
 		width       : 100%;
-		max-width   : 480px;
-		padding-left  : 0;
-		margin-top    : -162px;
+		max-width   : none;
 		margin-bottom : 0;
 		text-align    : left;
 	}
@@ -61,24 +58,46 @@
 	#lesson .lesson-notes small {
 		display      : block;
 		max-width    : none;
-		font-size    : 28px;
+		font-size    : 23px;
 		line-height  : 1.08;
 		letter-spacing : -0.015em;
 		color        : rgba(75, 46, 32, 0.86);
 		text-wrap    : balance;
 	}
 
+	#lesson .lesson-notes .lesson-flow {
+		margin-top     : 16px;
+		font-family    : var(--font-ui);
+		font-size      : 15px;
+		line-height    : 1.3;
+		letter-spacing : 0.1em;
+		text-transform : uppercase;
+		color          : rgba(96, 58, 40, 0.68);
+	}
+
+	#lesson .lesson-flow-arrow {
+		display         : inline-flex;
+		width           : 24px;
+		height          : 24px;
+		margin          : 0 8px;
+		border-radius   : 50%;
+		align-items     : center;
+		justify-content : center;
+		background      : var(--color-brown-main);
+		color           : #ffffff;
+		font-size       : 14px;
+		line-height     : 1;
+		letter-spacing  : 0;
+		vertical-align  : middle;
+	}
+
 	#lesson .lesson-media {
-		grid-column          : 2;
 		width               : 100%;
-		max-width           : 480px;
+		max-width           : none;
 		min-height          : 480px;
-		align-self          : start;
-		justify-self        : end;
-		margin-top          : -120px;
 		background-image    : url("../img/skin.png");
 		background-repeat   : no-repeat;
-		background-position : center right;
+		background-position : center left;
 		background-size     : contain;
 	}
 
@@ -92,29 +111,25 @@
 		row-gap               : 24px;
 	}
 
-	#lesson .lesson-head h4 {
-		padding-top : 0;
+	#lesson .lesson-copy {
+		row-gap : 24px;
 	}
 
-	#lesson .lesson-text {
-		display : block;
+	#lesson .lesson-copy h1 {
+		max-width : 100%;
 	}
 
 	#lesson .lesson-media {
 		max-width           : 100%;
 		min-height          : 360px;
-		justify-self        : stretch;
 		background-position : center;
 	}
 
 	#lesson .lesson-body,
+	#lesson .lesson-figure,
 	#lesson .lesson-notes {
 		max-width     : 100%;
 		margin-bottom : 0;
-	}
-
-	#lesson .lesson-notes {
-		margin-top : 0;
 	}
 
 	#lesson .lesson-notes small {
@@ -122,8 +137,15 @@
 		line-height : 1.12;
 	}
 
-	#lesson .lesson-media {
-		margin-top : 0;
+	#lesson .lesson-notes .lesson-flow {
+		font-size : 14px;
+	}
+
+	#lesson .lesson-flow-arrow {
+		width      : 22px;
+		height     : 22px;
+		margin     : 0 6px;
+		font-size  : 13px;
 	}
 }
 
@@ -132,12 +154,11 @@
 		padding : 32px 0 36px;
 	}
 
-	#lesson .lesson-head {
-		grid-template-columns : 1fr;
-		row-gap               : 10px;
+	#lesson .lesson-layout {
+		row-gap : 20px;
 	}
 
-	#lesson .lesson-layout {
+	#lesson .lesson-copy {
 		row-gap : 20px;
 	}
 
@@ -146,13 +167,22 @@
 		margin-bottom: 18px;
 	}
 
-	#lesson .lesson-notes {
-		margin-top : 0;
-	}
-
 	#lesson .lesson-notes small {
 		font-size   : 18px;
 		line-height : 1.16;
+	}
+
+	#lesson .lesson-notes .lesson-flow {
+		margin-top     : 12px;
+		font-size      : 12px;
+		letter-spacing : 0.08em;
+	}
+
+	#lesson .lesson-flow-arrow {
+		width      : 20px;
+		height     : 20px;
+		margin     : 0 5px;
+		font-size  : 12px;
 	}
 
 	#lesson .lesson-media {

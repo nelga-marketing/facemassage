@@ -15,7 +15,6 @@
 	}
 
 	#proof h1 {
-		margin : 0 auto;
 	}
 		#proof h1::first-line {
 			color : #d4ae9ce0;
@@ -54,7 +53,7 @@
 	#proof .proof-copy {
 		grid-column   : 2 / -1;
 		max-width     : 760px;
-		margin        : -300px 0 28px;
+		margin        : -253px 0 28px;
 		justify-self : start;
 		display       : grid;
 		row-gap       : 16px;

@@ -23,7 +23,6 @@
 	}
 
 	#guarantee .guarantee-shell h1 {
-		margin    : 0 0 10px;
 		max-width : 620px;
 	}
 		#guarantee .guarantee-shell h1::first-line {

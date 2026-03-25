@@ -52,7 +52,7 @@
 	align-items       : center;
 	scroll-snap-align : start;
 	scroll-snap-stop  : always;
-	padding           : 48px 0;
+	/* padding           : 48px 0; */
 	box-sizing        : border-box;
 }
 
@@ -64,6 +64,7 @@
 		width      : min(var(--container-max, 1240px), calc(100% - 120px));
 		margin     : 0 auto;
 		box-sizing : border-box;
+		padding    : 20px 0 0 0;
 	}
 
 	.section .cta-row {

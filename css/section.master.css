@@ -19,7 +19,7 @@
 
 	#master .master-layout {
 		display               : grid;
-		grid-template-columns : 320px minmax(0, 1fr);
+		grid-template-columns : 400px minmax(0, 1fr);
 		column-gap            : 40px;
 		row-gap               : 28px;
 		align-items           : start;
