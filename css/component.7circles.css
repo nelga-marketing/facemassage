@@ -6,7 +6,7 @@
 
 	/* position     : relative; */
 	width        : min(100%, var(--constellation-w));
-	height       : var(--constellation-h);
+	/* height       : var(--constellation-h); */
 	margin-left  : auto;
 	margin-right : auto;
 }

@@ -1,8 +1,7 @@
 #problem {
-	background    : var(--color-page-main);
+	background    : linear-gradient(180deg, var(--color-bg-soft) 0%, var(--color-page-main) 100%);
 	margin        : 0;
 	border-radius : 0;
-	overflow      : hidden;
 }
 
 	#problem .container {
@@ -18,7 +17,6 @@
 		min-height            : 62vh;
 		align-items           : stretch;
 		border-radius         : 0;
-		background            : var(--color-page-main);
 	}
 
 	#problem .image-placeholder {
@@ -28,7 +26,6 @@
 		margin-top          : 24px;
 		background-image    : url("../img/before_1.jpg");
 		background-position : left center;
-		background-color    : var(--color-page-main);
 	}
 
 	#problem .panel {
@@ -37,7 +34,6 @@
 		flex-direction  : column;
 		justify-content : flex-start;
 		border-radius   : 0;
-		background      : var(--color-page-main);
 	}
 
 	#problem .problem-content {

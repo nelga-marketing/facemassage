@@ -1,5 +1,5 @@
 #authority {
-	background : var(--color-page-main);
+	background : linear-gradient(180deg, var(--color-bg-soft) 0%, var(--color-page-main) 100%);
 }
 
 	#authority .authority-split {
@@ -39,7 +39,6 @@
 		display         : flex;
 		align-items     : stretch;
 		justify-content : stretch;
-		overflow        : hidden;
 		border-radius   : 40px 0 40px 0;
 		height          : 100%;
 		min-height      : 0;

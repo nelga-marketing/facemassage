@@ -1,5 +1,5 @@
 #mechanism {
-	background : var(--color-page-main);
+	background : linear-gradient(180deg, var(--color-bg-soft) 0%, var(--color-page-main) 100%);
 }
 
 	#mechanism .mechanism-layout {
