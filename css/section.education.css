@@ -4,19 +4,7 @@
 }
 
 #education .education-shell {
-	display         : grid;
-	grid-template-columns : 1fr;
-	justify-items   : center;
-}
-
-#education .education-shell h3 {
-	display    : grid;
-	gap        : 10px;
-	width      : 100%;
-	max-width  : 860px;
-	margin     : 0 0 18px;
-	text-align : center;
-	color      : var(--color-brown-main);
+	display : grid;
 }
 
 #education .education-heading-kicker {
@@ -43,18 +31,48 @@
 }
 
 #education .education-visual {
-	display        : flex;
+	display         : flex;
+	gap             : 34px;
+	align-items     : flex-start;
 	justify-content : center;
-	align-items    : center;
-	width          : 100%;
-	min-width      : 0;
+	width           : 100%;
+	min-width       : 0;
+}
+
+#education .education-column {
+	flex          : 0 0 240px;
+	display       : grid;
+	row-gap       : 34px;
+	align-content : start;
+}
+
+#education .education-center {
+	flex            : 0 1 640px;
+	display         : grid;
+	row-gap         : 18px;
+	align-content   : start;
+	justify-items   : center;
+	min-width       : 0;
+}
+
+#education .education-center h3 {
+	display    : grid;
+	gap        : 10px;
+	width      : 100%;
+	margin     : 0;
+	text-align : center;
+	color      : var(--color-brown-main);
+	position   : relative;
+	z-index    : 4;
 }
 
 #education .education-flower {
 	--circle-size     : 210px;
 	--orbit-distance  : 186px;
-	--constellation-w : 1160px;
-	--constellation-h : 980px;
+	--constellation-w : 640px;
+	--constellation-h : 640px;
+	position         : relative;
+	height           : var(--constellation-h);
 }
 
 #education .education-flower .circle-premium-center {
@@ -66,8 +84,6 @@
 }
 
 #education .education-card {
-	position : absolute;
-	z-index  : 1;
 	width    : 240px;
 	padding  : 0;
 }
@@ -96,46 +112,28 @@
 	color          : rgba(47, 34, 27, 0.76);
 }
 
-#education .education-card-1 {
-	left : 24px;
-	top  : 86px;
-}
-
-#education .education-card-2 {
-	right : 24px;
-	top   : 86px;
-}
-
-#education .education-card-3 {
-	left : 24px;
-	top  : 382px;
-}
-
-#education .education-card-4 {
-	right : 24px;
-	top   : 382px;
-}
-
-#education .education-card-5 {
-	left : 24px;
-	top  : 678px;
-}
-
-#education .education-card-6 {
-	right : 24px;
-	top   : 678px;
-}
-
 @media (max-width : 980px) {
 	#education {
 		padding : 32px 0 36px;
 	}
 
+	#education .education-visual {
+		gap : 22px;
+	}
+
+	#education .education-column {
+		flex-basis : 190px;
+	}
+
+	#education .education-center {
+		flex-basis : 520px;
+	}
+
 	#education .education-flower {
 		--circle-size     : 182px;
 		--orbit-distance  : 160px;
-		--constellation-w : 920px;
-		--constellation-h : 900px;
+		--constellation-w : 520px;
+		--constellation-h : 520px;
 	}
 
 	#education .education-flower .circle {
@@ -144,8 +142,7 @@
 
 	#education .education-shell h3 {
 		gap        : 8px;
-		max-width  : 720px;
-		margin     : 0 0 16px;
+		margin     : 0;
 	}
 
 	#education .education-heading-kicker {
@@ -165,35 +162,6 @@
 		font-size : 12px;
 	}
 
-	#education .education-card-2 {
-		right : 0;
-		top   : 92px;
-	}
-
-	#education .education-card-3 {
-		left : 0;
-		top  : 350px;
-	}
-
-	#education .education-card-5 {
-		left : 0;
-		top  : 608px;
-	}
-
-	#education .education-card-6 {
-		right : 0;
-		top   : 608px;
-	}
-
-	#education .education-card-1 {
-		left : 0;
-		top  : 92px;
-	}
-
-	#education .education-card-4 {
-		right : 0;
-		top   : 350px;
-	}
 }
 
 @media (max-width : 640px) {
@@ -201,9 +169,36 @@
 		padding : 24px 0 28px;
 	}
 
+	#education .education-visual {
+		display : grid;
+		gap     : 18px;
+	}
+
+	#education .education-column {
+		flex-basis  : auto;
+		row-gap    : 14px;
+		max-width  : 420px;
+		width      : 100%;
+		justify-self: center;
+	}
+
+	#education .education-column-left {
+		order : 2;
+	}
+
+	#education .education-center {
+		order : 1;
+	}
+
+	#education .education-column-right {
+		order : 3;
+	}
+
 	#education .education-flower {
-		--circle-size : 100%;
-		max-width     : 420px;
+		--circle-size     : 100%;
+		--constellation-w : 420px;
+		height            : auto;
+		max-width         : 420px;
 	}
 
 	#education .education-flower .circle {
@@ -212,8 +207,7 @@
 
 	#education .education-shell h3 {
 		gap       : 7px;
-		max-width : 320px;
-		margin    : 0 0 14px;
+		margin    : 0;
 	}
 
 	#education .education-heading-kicker {
@@ -228,13 +222,7 @@
 	}
 
 	#education .education-card {
-		position : relative;
-		left     : auto;
-		right    : auto;
-		top      : auto;
-		bottom   : auto;
 		width    : 100%;
-		transform : none;
 	}
 
 	#education .education-card .gallery-card-media {
