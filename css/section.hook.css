@@ -72,14 +72,16 @@
 
 	#hook .floating-card {
 		position      : absolute;
-		right         : 0;
-		top           : 456px;
+		/* right         : 0; */
+		/* top           : 456px; */
 		width         : 360px;
-		padding       : 22px 30px 20px;
-		border-radius : 24px 0 0 24px;
+		padding       : 12px 30px 20px;
+		/* border-radius : 24px 0 0 24px; */
 		background    : rgba(47, 34, 27, 0.92);
 		box-shadow    : 0 18px 38px rgba(20, 8, 2, 0.26);
 		z-index       : 2;
+		bottom        : 0;
+		width         : 100%;
 	}
 
 	#hook .floating-card small {
