@@ -245,8 +245,9 @@
 	}
 
 	#faq .faq-bottom {
-		margin-top : 16px;
-		gap        : 9px;
+		margin-top    : 16px;
+		margin-bottom : 18px;
+		gap           : 9px;
 	}
 
 	#faq .faq-bottom .button {

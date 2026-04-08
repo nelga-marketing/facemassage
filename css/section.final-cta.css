@@ -1,5 +1,7 @@
 #final-cta {
 	background-image : url("../img/image_12.png");
+	background-repeat : no-repeat;
+	background-size   : cover;
 	margin-top       : -1cm;
 	border-radius    : 0;
 }
@@ -135,16 +137,44 @@
 
 @media (max-width : 640px) {
 	#final-cta h1 {
-		max-width : 240px;
+		max-width : 270px;
 	}
 
 	#final-cta {
-		background-position : 68% center;
+		background-position : 68% top;
 	}
 
 	#final-cta .final-cta-copy {
 		max-width : 100%;
-		padding   : 12px 0;
+		padding   : 12px 0 18px;
+	}
+
+	#final-cta .final-cta-copy h1 {
+		margin       : 0 0 22px 18px;
+		padding-left : 34px;
+		text-indent  : -34px;
+		background   : transparent;
+		border-radius: 0;
+		transform    : none;
+		text-shadow  : 0 0 6px rgba(255, 255, 255, 0.8);
+	}
+
+	#final-cta .final-cta-copy h1::first-line {
+		text-shadow    : 0 0 4px rgba(255, 255, 255, 1);
+		paint-order    : stroke fill;
+	}
+
+	#final-cta .final-cta-copy h1::before {
+		left : 18px;
+	}
+
+	#final-cta .final-cta-copy h4,
+	#final-cta .final-cta-copy h5,
+	#final-cta .final-cta-reassurance,
+	#final-cta .final-cta-note {
+		padding       : 10px 12px;
+		border-radius : 18px;
+		background    : rgba(255, 250, 246, 0.72);
 	}
 
 	#final-cta .final-cta-copy h5 {
@@ -155,6 +185,7 @@
 	#final-cta .final-cta-copy h4 {
 		max-width : 250px;
 		margin    : 0 0 14px;
+		transform : none;
 	}
 
 	#final-cta .final-cta-reassurance {
@@ -165,6 +196,7 @@
 	#final-cta .final-cta-action {
 		margin : 0 0 14px;
 		width  : 100%;
+		transform : none;
 	}
 
 	#final-cta .final-cta-action .button {
@@ -174,6 +206,9 @@
 	}
 
 	#final-cta .final-cta-note {
-		max-width : 280px;
+		max-width  : 280px;
+		margin     : 8px auto 0;
+		text-align : center;
+		transform  : none;
 	}
 }
