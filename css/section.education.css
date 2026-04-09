@@ -112,6 +112,200 @@
 	color          : rgba(47, 34, 27, 0.76);
 }
 
+#education .education-pair-item,
+#education .education-card .gallery-card-media,
+#education .education-card h4,
+#education .education-card small,
+#education .education-flower .circle-copy {
+	transition :
+		opacity 260ms ease,
+		transform 260ms ease,
+		filter 260ms ease,
+		box-shadow 260ms ease,
+		color 260ms ease;
+}
+
+@media (min-width : 641px) {
+	#education.education-pairs-live .education-pair-item:not(.education-pair-active) {
+		opacity : 0.58;
+		filter  : saturate(0.84);
+	}
+
+	#education .education-card.education-pair-active {
+		transform : translateY(-6px);
+	}
+
+	#education .education-card.education-pair-active .gallery-card-media {
+		box-shadow : 0 16px 32px rgba(47, 34, 27, 0.16);
+	}
+
+	#education .education-card.education-pair-active h4 {
+		color : rgba(47, 34, 27, 0.96);
+	}
+
+	#education .education-card.education-pair-active small {
+		color : rgba(47, 34, 27, 0.88);
+	}
+
+	#education .education-flower .education-pair-active {
+		z-index    : 5;
+		box-shadow : 0 28px 54px rgba(88, 63, 40, 0.28);
+		filter     : saturate(1.05) brightness(1.02);
+	}
+
+	#education .education-flower .education-pair-active .circle-copy {
+		transform : scale(1.04);
+	}
+}
+
+@media (min-width : 641px) and (prefers-reduced-motion : no-preference) {
+	#education .education-flower {
+		animation : education-flower-breathe 9s ease-in-out infinite;
+	}
+
+	#education .education-flower .circle-center {
+		animation : education-center-breathe 6.8s ease-in-out infinite;
+	}
+
+	#education .education-flower .circle-1 {
+		animation : education-orbit-1 7.2s ease-in-out infinite;
+	}
+
+	#education .education-flower .circle-2 {
+		animation : education-orbit-2 8s ease-in-out infinite;
+	}
+
+	#education .education-flower .circle-3 {
+		animation : education-orbit-3 7.6s ease-in-out infinite;
+	}
+
+	#education .education-flower .circle-4 {
+		animation : education-orbit-4 8.4s ease-in-out infinite;
+	}
+
+	#education .education-flower .circle-5 {
+		animation : education-orbit-5 7.4s ease-in-out infinite;
+	}
+
+	#education .education-flower .circle-6 {
+		animation : education-orbit-6 8.2s ease-in-out infinite;
+	}
+}
+
+@keyframes education-flower-breathe {
+	0%,
+	100% {
+		transform : scale(1);
+	}
+
+	50% {
+		transform : scale(1.012);
+	}
+}
+
+@keyframes education-center-breathe {
+	0%,
+	100% {
+		transform  : translate(-50%, -50%) scale(1);
+		box-shadow : 0 22px 52px rgba(110, 80, 42, 0.24);
+	}
+
+	50% {
+		transform  : translate(-50%, -50%) scale(1.028);
+		box-shadow : 0 28px 64px rgba(110, 80, 42, 0.3);
+	}
+}
+
+@keyframes education-orbit-1 {
+	0%,
+	100% {
+		transform : translate(-50%, calc(-50% - var(--orbit-distance)));
+	}
+
+	50% {
+		transform : translate(calc(-50% - 6px), calc(-50% - var(--orbit-distance) - 10px));
+	}
+}
+
+@keyframes education-orbit-2 {
+	0%,
+	100% {
+		transform : translate(
+			calc(-50% + (var(--orbit-distance) * 0.866)),
+			calc(-50% - (var(--orbit-distance) * 0.5))
+		);
+	}
+
+	50% {
+		transform : translate(
+			calc(-50% + (var(--orbit-distance) * 0.866) + 8px),
+			calc(-50% - (var(--orbit-distance) * 0.5) - 6px)
+		);
+	}
+}
+
+@keyframes education-orbit-3 {
+	0%,
+	100% {
+		transform : translate(
+			calc(-50% + (var(--orbit-distance) * 0.866)),
+			calc(-50% + (var(--orbit-distance) * 0.5))
+		);
+	}
+
+	50% {
+		transform : translate(
+			calc(-50% + (var(--orbit-distance) * 0.866) + 10px),
+			calc(-50% + (var(--orbit-distance) * 0.5) + 8px)
+		);
+	}
+}
+
+@keyframes education-orbit-4 {
+	0%,
+	100% {
+		transform : translate(-50%, calc(-50% + var(--orbit-distance)));
+	}
+
+	50% {
+		transform : translate(calc(-50% + 4px), calc(-50% + var(--orbit-distance) + 12px));
+	}
+}
+
+@keyframes education-orbit-5 {
+	0%,
+	100% {
+		transform : translate(
+			calc(-50% - (var(--orbit-distance) * 0.866)),
+			calc(-50% + (var(--orbit-distance) * 0.5))
+		);
+	}
+
+	50% {
+		transform : translate(
+			calc(-50% - (var(--orbit-distance) * 0.866) - 9px),
+			calc(-50% + (var(--orbit-distance) * 0.5) + 7px)
+		);
+	}
+}
+
+@keyframes education-orbit-6 {
+	0%,
+	100% {
+		transform : translate(
+			calc(-50% - (var(--orbit-distance) * 0.866)),
+			calc(-50% - (var(--orbit-distance) * 0.5))
+		);
+	}
+
+	50% {
+		transform : translate(
+			calc(-50% - (var(--orbit-distance) * 0.866) - 7px),
+			calc(-50% - (var(--orbit-distance) * 0.5) - 8px)
+		);
+	}
+}
+
 @media (max-width : 980px) {
 	#education {
 		padding : 32px 0 36px;
