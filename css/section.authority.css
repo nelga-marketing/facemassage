@@ -40,16 +40,21 @@
 		align-items     : stretch;
 		justify-content : stretch;
 		border-radius   : 40px 0 40px 0;
+		overflow        : hidden;
 		height          : 100%;
 		min-height      : 0;
 	}
 
-	#authority .authority-video {
+	#authority .authority-photo {
 		display    : block;
 		width      : 100%;
 		height     : 100%;
-		object-fit : cover;
-		background : var(--color-surface-video);
+		border-radius : inherit;
+		background-image    : url("../img/image_13.jpg");
+		background-position : center;
+		background-repeat   : no-repeat;
+		background-size     : cover;
+		background-color : var(--color-surface-video);
 	}
 
 @media (max-width : 980px) {

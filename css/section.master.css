@@ -40,7 +40,11 @@
 		column-gap            : 18px;
 		row-gap               : 18px;
 		align-items           : start;
-		background-image      : url("../img/image_13.jpg");
+		box-shadow            : 0 0 25px -10px var(--color-brown-main);
+		background-image      : url("../img/certificates.png");
+		background-position   : center;
+		background-repeat     : no-repeat;
+		background-size       : cover;
 	}
 
 	#master .master-copy-top {
