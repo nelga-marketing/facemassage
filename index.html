@@ -46,6 +46,7 @@
 		<link rel="stylesheet" href="css/component.gallery.css" />
 		<link rel="stylesheet" href="css/component.gallery-card.css" />
 		<link rel="stylesheet" href="css/component.image.css" />
+		<link rel="stylesheet" href="css/component.lightbox.css" />
 		<link rel="stylesheet" href="css/component.reveal.css" />
 		<link rel="stylesheet" href="css/component.video.css" />
 		<link rel="stylesheet" href="css/section.hook.css" />
@@ -69,6 +70,7 @@
 
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 		<script src="js/component.carousel.js"></script>
+		<script src="js/component.lightbox.js"></script>
 		<script src="js/component.education.js"></script>
 		<script src="js/component.reveal.js"></script>
 		<!-- Google tag (gtag.js) -->
@@ -213,8 +215,14 @@
 					</div>
 
 					<div class="master-layout">
-						<div class="master-media image">
-							<div class="master-photo-large" aria-hidden="true"></div>
+						<div class="master-media-wrap">
+							<div class="master-media image">
+								<div class="master-photo-large" aria-hidden="true"></div>
+							</div>
+
+							<a class="master-licence-anchor" href="img/licence.png" data-lightbox-image="img/licence.png" aria-label="Open licence">
+								<img src="img/licenced.png" alt="Licence" />
+							</a>
 						</div>
 
 						<div class="master-copy">
@@ -684,6 +692,11 @@
 					</div>
 				</div>
 			</section>
+		</div>
+
+		<div class="lightbox" id="lightbox">
+			<button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+			<img class="lightbox-image" src="" alt="Licence" />
 		</div>
 	</body>
 </html>

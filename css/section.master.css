@@ -25,6 +25,12 @@
 		align-items           : start;
 	}
 
+	#master .master-media-wrap {
+		display     : grid;
+		row-gap     : 14px;
+		justify-items : start;
+	}
+
 	#master .master-copy {
 		min-height      : 458px;
 		display         : flex;
@@ -34,17 +40,33 @@
 	}
 
 	#master .master-media {
-		display               : grid;
-		grid-template-columns : 1fr 180px;
-		grid-template-rows    : 220px 220px;
-		column-gap            : 18px;
-		row-gap               : 18px;
-		align-items           : start;
+		display               : block;
+		width                 : 100%;
+		min-height            : 520px;
+		overflow              : hidden;
 		box-shadow            : 0 0 25px -10px var(--color-brown-main);
+		background            : transparent;
+	}
+
+	#master .master-photo-large {
+		width                 : 100%;
+		height                : 100%;
+		min-height            : 520px;
 		background-image      : url("../img/certificates.png");
 		background-position   : center;
 		background-repeat     : no-repeat;
 		background-size       : cover;
+	}
+
+	#master .master-licence-anchor {
+		display       : block;
+		width         : 70px;
+	}
+
+	#master .master-licence-anchor img {
+		display    : block;
+		width      : 100%;
+		height     : auto;
 	}
 
 	#master .master-copy-top {
@@ -89,6 +111,10 @@
 		row-gap               : 28px;
 	}
 
+	#master .master-media-wrap {
+		justify-items : start;
+	}
+
 	#master .master-copy {
 		min-height      : auto;
 		justify-content : flex-start;
@@ -96,12 +122,11 @@
 	}
 
 	#master .master-media {
-		grid-template-columns : 1fr 160px;
-		grid-template-rows    : 220px 180px;
+		min-height : 220px;
 	}
 
 	#master .master-photo-large {
-		height : 220px;
+		min-height : 220px;
 	}
 
 	#master .master-list h5 {
@@ -115,15 +140,15 @@
 	}
 
 	#master .master-media {
-		grid-template-columns : 1fr 120px;
-		grid-template-rows    : 200px 140px;
-		column-gap            : 12px;
-		row-gap               : 12px;
+		min-height : 200px;
+	}
+
+	#master .master-licence-anchor {
+		width : 62px;
 	}
 
 	#master .master-photo-large {
-		height        : 200px;
-		border-radius : 14px;
+		min-height : 200px;
 	}
 
 	#master .master-list {
